@@ -1,0 +1,3 @@
+# Variable and Fixed Concepts
+
+In a practical real world application of a [conceptlogic](../conceptlogic/conceptlogic.md) where concepts are loaded and saved into different files and new information is added and removed two types of concepts should be distinguished: Variable concepts and fixed concepts. The fixed concepts always stay the same. They can be saved and loaded into files and can not be changed by new information. On the other hand there are concepts which only exist in the RAM of the application and are updated permanently based on the information that is currently loaded from the files. These concepts, that are never saved to a long term storage are referred to as variable concepts.
