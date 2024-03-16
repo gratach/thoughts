@@ -42,7 +42,7 @@ Wenn der Nutzer einen der Beiträge anklickt, soll dieser in das Zentrum des Fen
 
 Die einzelnen Beiträge sollen sich dabei automatisch auf der Bildfläche anordnen, um den vorhandenen Platz optimal zu nutzen. Dazu soll die Bewegung der Elemente mit Hilfe von abstoßender und anziehender Potentiale simuliert werden.
 
-<img src="./images/navigation.svg" width=100%>
+![](./images/navigation.svg)
 
 ## Inhaltliche Strukturierung
 
@@ -103,7 +103,7 @@ Durch einen kleinen Kasten am oberen Rand des Textbeitrags soll angezeigt werden
 
 Dadurch soll erreicht werden, dass die gesamte Diskussion über ein Thema auch an einem Ort innerhalb des Netzwerks fokussiert wird, ohne dass sich an unterschiedlichen Stellen Meinungsblasen bilden.
 
-<img src="./images/atomstrom.svg" width=100%>
+![](./images/atomstrom.svg)
 	
 ## Kriterien für die Zusammenführung
 
@@ -111,11 +111,11 @@ Textbeiträge gehören genau dann fusioniert, wenn sie die exakt gleiche inhaltl
 
 Textbeiträge deren Inhalt nur ähnlich aber nicht identisch ist gehören nicht fusioniert.
 
-<img src="./images/vergleich.svg" width=100%>
+![](./images/vergleich.svg)
 
 Ist die genaue inhaltliche Bedeutung eines Textbeitrags unklar, so kann der Urheber gefragt werden wie der Textbeitrag gemeint ist. Seine Antwort legt dann die inhaltliche Bedeutung des ursprünglichen Kommentars für die Zukunft fest.
 
-<img src="./images/unklar.svg" width=100%>
+![](./images/unklar.svg)
 
 ## Kontextabhängige Beiträge
 
@@ -138,13 +138,13 @@ Zwei Textbeiträge mit einer identischen, aber kontextabhängigen Formulierung k
 
 Andererseits können zwei unterschiedliche kontextabhängige Textbeiträge genau dadurch inhaltlich identisch sein, dass sie aus unterschiedlichen Kontexten stammen. In diesem Fall gehören sie fusioniert.
 
-<img src="./images/kontext.svg" width=100%>
+![](./images/kontext.svg)
 
 Wenn sich ein Textbeitrag auf einen anderen bezieht, so ist zu unterscheiden, ob dabei nur der Inhalt oder auch die Formulierung des anderen Beitrags relevant ist. 
 
 Ein rein inhaltlicher Bezug liegt nur dann vor, wenn der Textbeitrag, auf den Bezug genommen wird, durch jeden beliebigen Beitrag mit identischem Inhalt ersetzt werden kann, ohne dass sich die Bedeutung des zweiten Textbeitrags ändert.
 
-<img src="./images/formulierungsbezug.svg" width=100%>
+![](./images/formulierungsbezug.svg)
 
 ## Umgang mit kontextabhängigen Beiträgen
 
@@ -154,7 +154,7 @@ Dazu soll man zu jeder Formulierung über das Optionsmenü festlegen können, we
 
 Abhängig davon welcher Kontextbezug angegeben wurde, werden nun zusätzliche Informationen zu den Textbeiträgen angezeigt.
 
-<img src="./images/kontexte.svg" width=100%>
+![](./images/kontexte.svg)
 
 Informationen wie Verfasser, Adressat, Datum und Urzeit werden in einem kleinen Textfeld am Rand des Beitrags abgebildet.
 
