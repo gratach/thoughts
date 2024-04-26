@@ -1,18 +1,17 @@
-
-	
-# Motivation
+# Diskussionsforum auf Basis eines semantischen Netzes - Konzeptentwurf	
+## Motivation
 
 Wenn man öffentlich eine sachliche Diskussion über ein komplexes Thema führen will, ist es wichtig für diesen Zweck eine geeignete Plattform zu wählen. Dieser Konzeptentwurf ist ein Vorschlag, wie eine solche Plattform gestaltet sein könnte, sodass bestmögliche Bedingungen dafür gegeben sind.
 
 Insbesondere sollen zwei Funktionen unterstützt werden, die in vielen herkömmlichen Diskussionsforen fehlen:
 
-## Fehlende Unterstützung netzwerkartiger Diskussionstopographien
+### Fehlende Unterstützung netzwerkartiger Diskussionstopographien
 
 Während reale Probleme aus vielen unterschiedlichen Teilfragen bestehen, die aufeinander aufbauen und netzwerkartig voneinander abhängen, sind die gängigen Chat-Werkzeuge meist linearer Natur und bilden höchstens noch die Möglichkeit baumartiger Verästelungen in Form von Sub-Threads.
 
 Was jedoch in den meisten Fällen nicht unterstützt wird, ist die Möglichkeit sich in einer Diskussion direkt auf einen Kommentar zu beziehen, der in einer komplett anderen Debatte vorkommt und dadurch beide Diskussionsstränge miteinander zu verbinden.
 
-## Fehlende Zusammenführung identischer Kommentare
+### Fehlende Zusammenführung identischer Kommentare
 
 Ein weiteres Problem bei Debatten im Internet ist, dass inhaltlich identische Fragen an verschiedenen Stellen innerhalb eines Forums auftreten können.
 
@@ -20,7 +19,7 @@ Auf diese Weise kann es dazu kommen, dass unterschiedliche Gruppen von Personen 
 
 Besser wäre es also, wenn identische Fragen innerhalb des Forums zusammengeführt werden würden, so dass sich die gesamte Diskussion über die jeweilige Frage an einer Stelle konzentriert. Die meisten existierenden Internetforen bieten diese Funktion nicht an.
 	
-# Mindmap-Forum Konzeptentwurf
+## Mindmap-Forum Konzeptentwurf
 
 Das Ziel ist die Implementierung eines Chat-Forums, welches die oben genannten Funktionen bietet und damit die sachliche Diskussion im Internet unterstützt. 
 
@@ -28,7 +27,7 @@ Die Gesamtheit aller Nutzerbeiträge soll eine Netzstruktur bilden, die unterein
 
 Jede Relation steht für einen inhaltlichen Zusammenhang von zwei Textbeiträgen.
 
-## Darstellung als Mindmap
+### Darstellung als Mindmap
 
 Die Navigation durch das Forum soll mit Hilfe einer navigierbaren Mindmap möglich sein.
 
@@ -44,7 +43,7 @@ Die einzelnen Beiträge sollen sich dabei automatisch auf der Bildfläche anordn
 
 ![](./images/navigation.svg)
 
-## Inhaltliche Strukturierung
+### Inhaltliche Strukturierung
 
 Die Textbeiträge und Relationen sind nach inhaltlichen Kriterien in verschiedene Klassen unterteilt, denen jeweils unterschiedliche Farben zugeordnet werden.
 
@@ -72,7 +71,7 @@ Eine Auswahl an möglichen Beitrags- und Relationsklassen ist in den folgenden T
 |Aussage über | Zeigt an, dass eine Aussage sich inhaltlich auf einen anderen Textbeitrag bezieht. | 'Äpfel sind Rot' ist eine Aussage über 'Apfel'|
 |Begründung zu | Zeigt an, dass eine Aussage einer anderen Aussage widerspricht. | 'Physik ist kompliziert' ist ein Widerspruch zu 'Physik ist einfach'|
 
-## Verfassen neuer Beiträge
+### Verfassen neuer Beiträge
 
 Zu jedem Zeitpunkt soll der Nutzer die Möglichkeit haben, neue Textbeiträge hinzuzufügen, die sich dann auf den aktuell zentral fokussierten Beitrag beziehen.
 
@@ -85,13 +84,13 @@ Solche Beschriftungen könnten zum Beispiel sein: 'Auf Frage antworten', 'Frage 
 Die zur Auswahl stehenden Optionen sollen dabei an den Beitragstyp des zentral fokussierten Inhalts angepasst sein.
 
 
-## Optionsmenü
+### Optionsmenü
 
 Bei Rechtsklick (bzw. gedrückt halten) auf Relationen und Textbeiträge soll ein Optionsmenü angezeigt werden, über welches man Änderungen durchführen kann. Es soll die Möglichkeit bestehen, Relationen und Textbeiträge zu löschen und deren Klassifikation zu ändern.
 
 Außerdem soll man mit Hilfe dieses Menüs auch neue Relationen zwischen bereits bestehenden Textbeiträgen erzeugen können.
 
-## Zusammenführung
+### Zusammenführung
 
 Ein zentrales Feature ist die Möglichkeit, bereits bestehende Textbeiträge, die inhaltlich identisch sind, zu verschmelzen.
 
@@ -105,7 +104,7 @@ Dadurch soll erreicht werden, dass die gesamte Diskussion über ein Thema auch a
 
 ![](./images/atomstrom.svg)
 	
-## Kriterien für die Zusammenführung
+### Kriterien für die Zusammenführung
 
 Textbeiträge gehören genau dann fusioniert, wenn sie die exakt gleiche inhaltliche Bedeutung haben.
 
@@ -117,7 +116,7 @@ Ist die genaue inhaltliche Bedeutung eines Textbeitrags unklar, so kann der Urhe
 
 ![](./images/unklar.svg)
 
-## Kontextabhängige Beiträge
+### Kontextabhängige Beiträge
 
 Ein Textbeitrag entsteht immer in einem Kontext. Dieser umfasst alle Rahmenbedingungen, die beim Schreiben des Beitrags geherrscht haben. 
 
@@ -146,7 +145,7 @@ Ein rein inhaltlicher Bezug liegt nur dann vor, wenn der Textbeitrag, auf den Be
 
 ![](./images/formulierungsbezug.svg)
 
-## Umgang mit kontextabhängigen Beiträgen
+### Umgang mit kontextabhängigen Beiträgen
 
 Damit der Inhalt eines Textbeitrags von den Nutzern des Forums richtig bewertet werden kann, ist es wichtig, dass Kontextbezüge auch visuell dargestellt werden.
 
@@ -170,7 +169,7 @@ Ist die Formulierung, auf die Bezug genommen wird, nicht sichtbar, weil stattdes
 
 In diesem Fall ist die Umrandung des Pfeiles jedoch gestrichelt. Wird der gestrichelte Kontext-Pfeil angeklickt, so wird automatisch zu der Formulierung gewechselt, auf die sich der Textbeitrag bezieht.
 
-## Navigation mit Multifokus
+### Navigation mit Multifokus
 
 Um identische Beiträge von verschiedenen Bereichen des Netzwerks zusammenführen zu können, muss es möglich sein, zu mehreren Stellen gleichzeitig zu navigieren.
 
@@ -186,14 +185,10 @@ Zu jedem Zeitpunkt existiert genau ein Hauptfokuspunkt. Das ist immer der Textbe
 
 Über das Optionsmenü können Fokuspunkte auch wieder entfernt werden.
 
-# Umsetzung
+## Umsetzung
 
 Die Umsetzung des oben beschriebenen Projektes ist ein sehr umfangreiches Vorhaben. Ein naheliegender Ansatz ist es das Diskussionsforum als Webanwendung zu realisieren.
 
-## Bereits geleistete Arbeit
+### Bereits geleistete Arbeit
 
 Um dieses Ziel zu erreichen wurde eine Javascript-Demo in entwickelt um die Navigation durch das Semantische Netz zu erproben: \href{https://debablo.de/demo}{https://debablo.de/demo}
-
-## Unterstützung gesucht
-
-Falls Sie Interesse haben, an diesem Projekt mitzuwirken, sind Sie herzlich dazu eingeladen. Jede Form von Unterstützung ist willkommen.

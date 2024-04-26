@@ -1,0 +1,3 @@
+# Byte tree graph
+
+A byte tree graph is a infinitely large graph in which each node is connected to 256 other nodes in such way that there are no circles within the graph and for all pairs of nodes there is exactly one path that connects them. For each node of the byte tree graph there is a specific circular order of the edges that are attached to it in a way that all edges have one predecessor and one successor and the 256th successor of an edge is the edge itself.

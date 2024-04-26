@@ -1,0 +1,8 @@
+# How to sort a list of terms into a subtopic tree
+
+When a list of terms should be organized in an intuitive way it makes sense to build a tree of subtopics that include all the terms as leafs. This is not an easy task when it comes to large dataset sizes. A challenge is to find an arrangement that distributes the leafs evenly on the subtopic tree. In addition, it is nearly impossible to design the tree in such a way that there is no ambiguity in the assignment of the leaves.
+
+One question that arises is what is a good way to generate such subtopic tree for a given set of terms with the help of large language models. A large language model has only a limited number of terms that it can structure at the same time, so it seams plausible to generate the subtopic tree in chunks. What is a good algorithm to approach this?
+
+### The one by one approach
+One idea is to add the terms one by one to the subtopic tree. Start at the root node and see which subtopics are most likely to describe the new term. Repeat this iteratively until the end of a branch is reached or none of the available subtopics describe the new term. When this point is reached, add the new term at this place as a new leaf. At the very beginning of the subtopic tree construction, only the root node exists, so the first leafs are being attached directly to the root node. When the number of branches that are attached to a specific topic exceeds a threshold number, a mechanism is triggered that sums up all attached topics into groups and inserts the names of the groups as intermediate nodes. This reduces the number of directly attached branches at the specific topic and adds one additional layer to the branches that start at this point of the subtopic tree.
