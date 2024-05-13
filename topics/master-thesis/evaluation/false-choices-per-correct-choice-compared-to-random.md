@@ -6,17 +6,14 @@ For each pair of predicate and subject a large language model has to guess which
 
 To accomplish this the following approach is used:
 
-A metric for the quality of the predicates $Q_{pred}$ is the false choices per correct choices fraction $\frac{FC}{CC}$ divided by the fraction of false choices per correct choices when guessing randomly $\frac{{FC}_{rand}}{{CC}_{rand}}$. 
+A metric for the quality of the predicates $Q_{pred}$ is the false choices per correct choices fraction $\frac{FC}{CC}$ divided by the fraction of false choices per correct choices when guessing randomly $\frac{FC_{rand}}{CC_{rand}}$. 
 
-$$
-Q_{pred} = \frac{\frac{{FC}}{{CC}}}{\frac{{FC}_{rand}}{{CC}_{rand}}}
-$$
+$$Q_{pred} = \frac{\frac{FC}{CC}}{\frac{FC_{rand}}{CC_{rand}}}$$
+
 The following applies:
-$$
-\frac{FC}{CC} = \frac{1}{{FP}} -1 = \frac{TC}{{FC}} - 1
-$$
+
+$$\frac{FC}{CC} = \frac{1}{{FP}} -1 = \frac{TC}{{FC}} - 1$$
+
 Where $TC$ is the total number of choices $CC + FC$ and $FP$ is the proportion of the false choices out of the total choices. The error $\delta_{FP}$ of $FP$ can be calculated as described in [error-of-binary-event-probability](../formula/error-of-binary-event-probability.md). Following the [error propagation rules](../formula/multiple-variable-function-error-propagation.md) the error $\delta_{Q_{pred}}$ of  $Q_{pred}$ is:
 
-$$
-\delta_{Q_{pred}} = \frac{\delta_{FP}}{{({FP})^2}\frac{{FC}_{rand}}{{CC}_{rand}}}
-$$
+$$\delta_{Q_{pred}} = \frac{\delta_{FP}}{{({FP})^2}\frac{FC_{rand}}{CC_{rand}}}$$
