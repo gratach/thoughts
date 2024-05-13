@@ -1,18 +1,18 @@
 # Physics term adapted subtopic tree evaluation
 
-Evaluation of the subtopic tree generated from the [master-adapted-subtopic-tree-generation](../../code/projects/master-adapted-subtopic-tree-generation.md) project and the [technical terms](https://github.com/gratach/master-database-files/blob/bcf75729e024abb289219e831c339a6292d6eb82/master-keyword-extraction/technical_terms.txt). The json data of the subtopic tree is [here](https://github.com/gratach/master-database-files/blob/468c729f480d6d775fe96fde7a50dfda08dc1a6d/master-adapted-subtopic-tree-generation/subtopic_tree.json).
+Evaluation of the subtopic tree generated from the ==subdivision algorithm== of the [master-adapted-subtopic-tree-generation](../../code/projects/master-adapted-subtopic-tree-generation.md) project and the [technical terms](https://github.com/gratach/master-database-files/blob/bcf75729e024abb289219e831c339a6292d6eb82/master-keyword-extraction/technical_terms.txt). The json data of the subtopic tree is [here](https://github.com/gratach/master-database-files/blob/468c729f480d6d775fe96fde7a50dfda08dc1a6d/master-adapted-subtopic-tree-generation/subtopic_tree.json). The evaluation of the free association algorithm is [here](physics-term-adapted-subtopic-tree-evaluation-free-association-algorithm.md).
 
 ## General properties
 
-The subtopic tree contains ==1038 leafs== and 211 junction nodes. In average each leaf has a ==depth of 5.36== within the subtopic tree. The distribution of the leaf depth looks as follows:
+The subtopic tree contains ==1038 leafs== and 209 supporting junction nodes. In average each leaf has a ==depth of 5.36== within the subtopic tree. The distribution of the leaf depth looks as follows:
 
-![](term-depth-plot.svg)
+![](./images/term-depth-plot.svg)
 When an optimal number of 5 subbranches per junctions is aimed for and the leafs are evenly distributed across the subtopic tree there should be an optimal target depth between 4 and 5 for the list of 1038 technical terms. ($5^4 = 625 < 1028 < 3125 = 5^5$)
 The present distribution shows that there nearly 50% of the leafs are deeper than 5 steps in the subtopic tree. This makes the search for them inefficient.
 
 The following plot shows the number of junction nodes that have a given number of subbranches attached to them.
 
-![](number-of-subbranches-plot.svg)
+![](./images/number-of-subbranches-plot.svg)
 There is a peak at a number of 5 subbranches. This is due to the fact, that during the creation of the subtopic network the model was advised to divide the topics of oversized  junctions into 5 topic categories. This mechanism was triggered when there are more than 15 subtopics per junction. This explains why there is no higher number of subbranches than 15. In the ideal scenario that was aimed for during the creation of the subtopic network there should  be only junctions with 5 subbranches. Small numbers of subbranches like 0 and 1 make the subtopic network inefficient while large numbers of subbranches like numbers higher than 10 makes it hard to navigate and to understand intuitively.
 
 ## Content properties
