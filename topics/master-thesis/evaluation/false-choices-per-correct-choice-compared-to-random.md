@@ -12,8 +12,8 @@ $$Q_{pred} = \frac{\frac{FC}{CC}}{\frac{FC_{rand}}{CC_{rand}}}$$
 
 The following applies:
 
-$$\frac{FC}{CC} = \frac{1}{{FP}} -1 = \frac{TC}{{FC}} - 1$$
+$$\frac{FC}{CC} = \frac{FP}{1 - {FP}}$$
 
-Where $TC$ is the total number of choices $CC + FC$ and $FP$ is the proportion of the false choices out of the total choices. The error $\delta_{FP}$ of $FP$ can be calculated as described in [error-of-binary-event-probability](../formula/error-of-binary-event-probability.md). Following the [error propagation rules](../formula/multiple-variable-function-error-propagation.md) the error $\delta_{Q_{pred}}$ of  $Q_{pred}$ is:
+Where  $FP =  \frac{FC}{FC + CC}$ is the proportion of the false choices out of the total choices. The error $\delta_{FP}$ of $FP$ can be calculated as described in [error-of-binary-event-probability](../formula/error-of-binary-event-probability.md). Following the [error propagation rules](../formula/multiple-variable-function-error-propagation.md) the error $\delta_{Q_{pred}}$ of  $Q_{pred}$ is:
 
-$$\delta_{Q_{pred}} = \frac{\delta_{FP}}{{({FP})^2}\frac{FC_{rand}}{CC_{rand}}}$$
+$$\delta_{Q_{pred}} = \frac{\delta_{FP}}{{(1 - {FP})^2}\frac{FC_{rand}}{CC_{rand}}}$$

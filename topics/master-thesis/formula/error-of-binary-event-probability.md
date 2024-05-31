@@ -12,11 +12,11 @@ where $N_{+}$ is the number of positive outcomes of the experiments.
 Given that $p$ has the value that was calculated in this way, what is the average error $\delta_{N_+}$ of $N_{+}$?
 
 $$
-\delta_{N_+} = \sqrt{\sum_{k = 1}^{N}\binom{N}{k}p^k(1-p)^{N - k}(k - N_+)^{2}}
+\delta_{N_+} = \sqrt{\sum_{k = 0}^{N}\binom{N}{k}p^k(1-p)^{N - k}(k - N_+)^{2}} = \sqrt{Np(1-p)}
 $$
 The error $\delta_p$ of $p$ if calculated a second time would then be
 
 $$
-\delta_p = \frac{\delta_{N_+}}{N}
+\delta_p = \frac{\delta_{N_+}}{N} = \sqrt{\frac{p(1-p)}{N}}
 $$
-(See also [Wikipedia](https://de.wikipedia.org/wiki/Binomialverteilung#M%C3%BCnzwurf))
+(See also [Wikipedia](https://de.wikipedia.org/wiki/Binomialverteilung#M%C3%BCnzwurf) and [this](https://stats.stackexchange.com/questions/80957/calculating-some-kind-of-confidence-or-error-rate-for-a-set-of-binary-data) question)

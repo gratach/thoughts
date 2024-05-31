@@ -6,11 +6,11 @@ The graph has ==10061 edges== an ==average degree of 19.39== a maximal degree of
 
 Using this graph as a foundation the ```tree_cor_mi``` network was created by asking ```gpt-3.5-turbo``` for the 5 strongest connections per term. Therefore the selection of connections to choose from was expanded to include some random connections where necessary.
 
-This graph has ==3249 edges== an ==average degree of 6.26== a maximal degree of 15 and a minimal degree of 1. It forms one connected unit and has an ==average path length== between two randomly selected terms of ==4.95==.
+This graph has ==3234 edges== an ==average degree of 6.23== a maximal degree of 15 and a minimal degree of 1. It forms one connected unit and has an ==average path length== between two randomly selected terms of ==4.95==.
 
 The minimal degree of 1 is a result of multiple errors in the answers of ```gpt-3.5-turbo```. To correct this an other graph ```tree_cor_mi_man``` was created by adding a small number of connections manually.
 
-The resulting graph has ==3256 edges== an ==average degree of 6.27== a maximal degree of 15 and a minimal degree of 5. It forms one connected unit and has an ==average path length== between two randomly selected terms of ==4.94==.
+The resulting graph has ==3247 edges== an ==average degree of 6.26== a maximal degree of 15 and a minimal degree of 5. It forms one connected unit and has an ==average path length== between two randomly selected terms of ==4.94==.
 
 The five most connected terms within this graph are:
 
