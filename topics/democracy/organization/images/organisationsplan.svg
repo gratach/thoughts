@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="148.31184mm"
+   height="181.14392mm"
+   viewBox="0 0 148.31184 181.14391"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="organisationsplan.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="85.862967"
+     inkscape:cy="591.94939"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-nodes="false"
+     inkscape:window-width="956"
+     inkscape:window-height="507"
+     inkscape:window-x="960"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(21.852681,-14.894613)">
+    <g
+       id="g1245"
+       transform="matrix(1.122162,0,0,1.1322777,7.5481718,-18.198796)">
+      <path
+         style="fill:#5bc6ff;fill-opacity:1;stroke:#000000;stroke-width:0.45426px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 51.554109,120.98825 c -0.188089,-16.70425 36.552776,-17.74887 36.5547,0.40559 0.0017,15.87621 -36.366612,16.29866 -36.5547,-0.40559 z"
+         id="path835-35"
+         sodipodi:nodetypes="zsz" />
+      <text
+         xml:space="preserve"
+         style="font-size:6.3944px;line-height:1.25;font-family:sans-serif;stroke-width:0.368908"
+         x="62.869808"
+         y="121.59417"
+         id="text909"><tspan
+           sodipodi:role="line"
+           id="tspan907"
+           x="62.869808"
+           y="121.59417"
+           style="stroke-width:0.368908">e. V.</tspan></text>
+    </g>
+    <path
+       style="fill:#ff3c7d;fill-opacity:1;stroke:#000000;stroke-width:0.444568px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 14.763421,71.389942 C 14.570955,55.754758 52.166954,54.776998 52.168924,71.769571 52.170646,86.629712 14.955887,87.025127 14.763421,71.389942 Z"
+       id="path835"
+       sodipodi:nodetypes="zsz" />
+    <path
+       style="fill:#49d636;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 50.084634,73.414619 4.156383,-5.68549 0.278417,3.886759 c 9.360245,-2.57982 17.52941,-6.54672 26.742264,-14.565279 l 1.684225,2.606178 c -5.471795,4.2898 -14.940138,11.192586 -22.210809,12.507984 12.645555,0.65691 27.480368,25.2352 33.374475,34.023149 l -4.276931,0.30704 C 77.649211,84.607097 62.567787,70.500239 54.653079,74.793967 l -0.06809,3.831052 c -1.636711,-1.682385 -3.379688,-4.000536 -4.500356,-5.2104 z"
+       id="path1834"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="fill:#444444;fill-opacity:0.0824349;stroke:#939393;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 2.810636,100.8108 c -6.713997,0.2662 -24.177683,12.73886 -24.163394,34.15937 0.01175,17.61441 4.485895,29.71877 16.301552,39.27158 11.815657,9.55281 30.365107,20.77502 40.58115,21.30408 10.216047,0.52905 31.345786,-6.65306 39.514701,-5.73816 8.168915,0.91491 22.307039,-2.50851 18.934784,-13.15247 -3.372255,-10.64396 -14.435776,-15.69128 -24.206505,-11.51216 -8.336856,3.56582 -30.852731,2.90644 -35.329675,-0.46546 -4.476943,-3.3719 -18.428155,-12.07871 -20.8423,-19.39355 -2.414145,-7.31484 1.427675,-10.62207 4.329721,-15.37614 3.263266,-5.3458 11.168821,-18.55532 5.516471,-22.93276 -5.652349,-4.37744 -13.922508,-6.43054 -20.636505,-6.16433 z"
+       id="path1916"
+       sodipodi:nodetypes="zssssssssssz" />
+    <rect
+       style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.307844;stroke-opacity:1"
+       id="rect1273-3-7"
+       width="22.656004"
+       height="10.225493"
+       x="66.500099"
+       y="80.531647" />
+    <g
+       id="g1323-1-4"
+       transform="translate(31.360933,-56.351135)">
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.196499"
+         y="139.60829"
+         id="text1277-9-43"><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="139.60829"
+           style="stroke-width:0.150832"
+           id="tspan1580-8">Hält Anteile von</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="142.8763"
+           style="stroke-width:0.150832"
+           id="tspan1912">mehr als 50% </tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="146.14432"
+           style="stroke-width:0.150832"
+           id="tspan2089">der GMBH</tspan></text>
+    </g>
+    <g
+       id="g883"
+       transform="translate(17.464491,-34.558765)">
+      <path
+         id="path835-3"
+         style="fill:#ffc439;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 83.281828,96.499577 c 3.039446,-0.206396 7.567033,-1.116351 8.436611,-4.145211 1.913198,-0.545286 5.474599,-3.702129 5.29959,-5.959854 -0.482081,-6.219207 -10.223611,-7.708377 -15.121667,-4.252804 -6.020155,-1.391459 -14.771869,0.918388 -14.414456,6.341994 0.216777,3.289568 2.210013,4.961512 5.16584,5.285018 0.907681,3.200416 7.6268,2.935063 10.634082,2.730857 z"
+         sodipodi:nodetypes="scscscs" />
+      <text
+         xml:space="preserve"
+         style="font-size:4.2262px;line-height:1.25;font-family:sans-serif;stroke-width:0.243819"
+         x="70.412331"
+         y="89.633408"
+         id="text878"><tspan
+           sodipodi:role="line"
+           id="tspan876"
+           x="70.412331"
+           y="89.633408"
+           style="stroke-width:0.243819">Investoren</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:4.5861px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="31.984024"
+       y="72.799614"
+       id="text896"><tspan
+         sodipodi:role="line"
+         id="tspan894"
+         x="31.984024"
+         y="72.799614"
+         style="stroke-width:0.264583">GMBH</tspan></text>
+    <path
+       style="fill:#49d636;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 19.082688,161.78449 -0.387239,3.18788 c 22.210652,-8.16767 66.536665,1.65402 75.970651,-3.95548 3.898271,-2.31793 7.11238,-8.35297 7.96642,-13.28141 0.13098,0.0104 2.37947,10.80139 -5.68157,15.98721 -8.061049,5.18582 -23.653379,-4.6532 -47.795669,9.18621 l 2.314836,3.53766 c 13.858219,-14.52398 38.581219,-5.86112 46.766432,-10.25504 8.185211,-4.39391 7.363321,-15.09673 7.363321,-15.09673 0,0 1.74244,13.00228 -3.67141,16.38002 -5.413842,3.37773 -15.382138,6.3123 -15.215729,6.38907 l 1.314563,3.26811 c 0,0 11.200719,-4.35882 15.990196,-7.55509 4.34488,-2.89956 5.14414,-9.56112 4.65391,-17.16593 1.99205,7.2062 2.66444,10.10544 1.31326,18.65865 l 4.22701,0.26992 c -0.93239,-22.67786 -7.82384,-24.97203 -10.61551,-36.52513 l 4.92873,-2.18217 -9.724367,-4.38482 -4.279011,9.68605 5.359261,-1.91505 c 0.826097,3.1035 2.544667,17.72118 -6.849066,22.75171 -9.393735,5.03053 -58.77695,-3.48845 -73.949019,3.01436 z"
+       id="path1483"
+       sodipodi:nodetypes="ccsczcczczccscccccccczc" />
+    <g
+       id="g945"
+       transform="translate(3.5664523,23.477333)">
+      <path
+         style="fill:#d0cef0;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -8.4225521,138.87271 c -0.111513,-9.55827 21.6712661,-10.156 21.6724071,0.23208 9.98e-4,9.08447 -21.5608941,9.3262 -21.6724071,-0.23208 z"
+         id="path835-2"
+         sodipodi:nodetypes="zsz" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.26611px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.188429"
+         x="2.8574603"
+         y="137.48557"
+         id="text937"><tspan
+           sodipodi:role="line"
+           id="tspan935"
+           x="2.8574603"
+           y="137.48557"
+           style="text-align:center;text-anchor:middle;stroke-width:0.188429">Software-</tspan><tspan
+           sodipodi:role="line"
+           x="2.8574598"
+           y="141.56821"
+           style="text-align:center;text-anchor:middle;stroke-width:0.188429"
+           id="tspan939">entwickler</tspan></text>
+    </g>
+    <path
+       style="fill:#e508b7;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 13.223815,85.979115 c -0.11151,-9.558275 21.67127,-10.15601 21.67241,0.23208 10e-4,9.084459 -21.56089,9.326189 -21.67241,-0.23208 z"
+       id="path835-5-61-0"
+       sodipodi:nodetypes="zsz" />
+    <path
+       style="fill:#7976b7;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 63.302223,105.68884 c -0.11151,-9.558272 21.67127,-10.156007 21.67241,0.23208 0.001,9.08446 -21.56089,9.32619 -21.67241,-0.23208 z"
+       id="path835-5-61"
+       sodipodi:nodetypes="zsz" />
+    <path
+       style="fill:#ffb106;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 10.030228,153.93203 -5.6789109,-0.0694 C 7.6249962,132.06427 21.242176,119.76624 30.164243,116.70652 l -9.97666,-1.61223 -0.02463,-3.37808 c 0,0 12.142594,3.47954 15.366195,1.82197 6.739376,-3.46538 2.650694,-15.5294 -3.7693,-17.601396 l -2.03333,1.641005 -0.844359,-6.197607 6.956462,1.403532 -2.218482,1.582272 c 9.216491,5.030149 9.524227,15.993094 5.163873,20.281084 7.475901,-0.19073 17.146802,0.35954 21.627439,-2.76485 l -2.847717,-3.08256 8.099785,0.41638 -1.836614,6.95646 -1.866234,-2.22914 c -11.536817,6.55975 -19.229894,2.6124 -27.348822,4.45318 -10.504642,2.38168 -25.40168,18.56054 -24.581615,35.53546 z"
+       id="path1654"
+       sodipodi:nodetypes="cccccscccccccccccscc" />
+    <g
+       id="g945-9"
+       transform="translate(4.8140367,-26.838211)">
+      <path
+         style="fill:#d0cef0;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -8.4225521,138.87271 c -0.111513,-9.55827 21.6712661,-10.156 21.6724071,0.23208 9.98e-4,9.08447 -21.5608941,9.3262 -21.6724071,-0.23208 z"
+         id="path835-2-1"
+         sodipodi:nodetypes="zsz" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.26611px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.188429"
+         x="2.8574603"
+         y="137.48557"
+         id="text937-2"><tspan
+           sodipodi:role="line"
+           id="tspan935-7"
+           x="2.8574603"
+           y="137.48557"
+           style="text-align:center;text-anchor:middle;stroke-width:0.188429">Software-</tspan><tspan
+           sodipodi:role="line"
+           x="2.8574598"
+           y="141.56821"
+           style="text-align:center;text-anchor:middle;stroke-width:0.188429"
+           id="tspan939-0">entwickler</tspan></text>
+    </g>
+    <g
+       id="g1031"
+       transform="translate(60.195483,48.805363)">
+      <g
+         id="g1235">
+        <path
+           style="fill:#e5dd9a;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 4.283056,129.58555 c -0.111513,-9.55827 21.671266,-10.15601 21.672407,0.23208 9.98e-4,9.08446 -21.560894,9.32619 -21.672407,-0.23208 z"
+           id="path835-5-6"
+           sodipodi:nodetypes="zsz" />
+        <text
+           xml:space="preserve"
+           style="font-size:3.16919px;line-height:1.25;font-family:sans-serif;stroke-width:0.182838"
+           x="6.0167994"
+           y="130.22301"
+           id="text1026"><tspan
+             sodipodi:role="line"
+             id="tspan1024"
+             x="6.0167994"
+             y="130.22301"
+             style="stroke-width:0.182838">Organisator</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g1240"
+       transform="translate(5.0049081,27.142354)">
+      <path
+         style="fill:#c9ffb7;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 23.245816,153.49315 c -0.111513,-9.55827 21.671266,-10.15601 21.672407,0.23208 9.98e-4,9.08445 -21.560894,9.32619 -21.672407,-0.23208 z"
+         id="path835-5-6-8"
+         sodipodi:nodetypes="zsz" />
+      <text
+         xml:space="preserve"
+         style="font-size:4.69921px;line-height:1.25;font-family:sans-serif;stroke-width:0.271109"
+         x="26.749197"
+         y="154.84879"
+         id="text1026-7"><tspan
+           sodipodi:role="line"
+           id="tspan1024-9"
+           x="26.749197"
+           y="154.84879"
+           style="stroke-width:0.271109">Planer</tspan></text>
+    </g>
+    <g
+       id="g1125"
+       transform="translate(-15.366338,-34.200711)">
+      <g
+         id="g1110"
+         transform="translate(-1.3448907,-3.8530346)">
+        <g
+           id="g1031-2"
+           transform="translate(-6.614583,44.412203)">
+          <path
+             style="fill:#cbd56e;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="m 4.283056,129.58555 c -0.111513,-9.55827 21.671266,-10.15601 21.672407,0.23208 9.98e-4,9.08446 -21.560894,9.32619 -21.672407,-0.23208 z"
+             id="path835-5-6-0"
+             sodipodi:nodetypes="zsz" />
+          <text
+             xml:space="preserve"
+             style="font-size:4.28564px;line-height:1.25;font-family:sans-serif;stroke-width:0.247249"
+             x="7.0584569"
+             y="130.92216"
+             id="text1026-2"><tspan
+               sodipodi:role="line"
+               id="tspan1024-3"
+               x="7.0584569"
+               y="130.92216"
+               style="stroke-width:0.247249">Berater</tspan></text>
+        </g>
+      </g>
+    </g>
+    <path
+       style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 61.700602,130.44806 c -10.943709,3.8725 -33.768046,-5.73544 -43.564646,-11.50514 1.56192,-1.57433 2.690785,-2.25654 2.690785,-2.25654 l -6.49186,0.0199 -0.416858,6.31041 c 0,0 1.383608,-1.43034 2.667254,-2.73302 0.91198,0.93827 22.230156,12.17973 35.430707,13.51356 -8.812534,1.7159 -41.371148,0.71056 -46.0385713,0.86494 l -0.30696,-3.708 -4.5984853,4.95818 5.4958914,4.46944 -0.3998627,-3.62053 c 16.6059449,1.25042 32.3738699,1.15014 45.7100819,-0.63828 l -35.667328,18.97361 -2.060148,-2.48559 -1.439799,5.62073 6.957722,1.31034 -1.784561,-2.30174 35.651397,-18.70808 c -6.018758,6.31086 -10.187031,21.6588 -11.61694,31.32137 l -3.613311,-0.53926 4.28544,5.91104 6.121061,-4.31686 -3.728397,-0.59792 c 1.516658,-9.08332 7.026655,-26.97298 12.404706,-30.33459 -1.315804,7.37411 4.388902,22.14463 9.487928,30.66303 l -3.206619,2.01608 7.218328,1.47206 1.289976,-6.25244 -2.972933,1.46152 c -3.128664,-6.77679 -13.167799,-24.85053 -5.062495,-35.71794 z"
+       id="path1271"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+    <path
+       style="fill:#c2eeff;fill-opacity:1;stroke:#000000;stroke-width:0.305913px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 54.997374,131.59436 c -0.128932,-11.05136 25.05652,-11.74247 25.057839,0.26834 0.0012,10.50353 -24.928906,10.78303 -25.057839,-0.26834 z"
+       id="path835-6"
+       sodipodi:nodetypes="zsz" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.5861px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="67.496368"
+       y="130.53156"
+       id="text922"><tspan
+         sodipodi:role="line"
+         id="tspan920"
+         x="67.496368"
+         y="130.53156"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583">Streu-</tspan><tspan
+         sodipodi:role="line"
+         x="67.496368"
+         y="136.26418"
+         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan924">Topf</tspan></text>
+    <g
+       id="g1335"
+       transform="translate(-14.242655,-5.2437424)">
+      <rect
+         style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.542895;stroke-opacity:1"
+         id="rect1273"
+         width="30.020697"
+         height="24.000269"
+         x="35.256695"
+         y="137.00032" />
+      <g
+         id="g1323">
+        <text
+           xml:space="preserve"
+           style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+           x="36.196499"
+           y="139.60829"
+           id="text1277"><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="139.60829"
+             style="stroke-width:0.150832"
+             id="tspan1279">Ausschüttung von </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="142.8763"
+             style="stroke-width:0.150832"
+             id="tspan1281">Geldern für bereits </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="146.14432"
+             style="stroke-width:0.150832"
+             id="tspan1283">erbrachte Leistungen </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="149.41232"
+             style="stroke-width:0.150832"
+             id="tspan1301">proportional zu deren </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="152.68034"
+             style="stroke-width:0.150832"
+             id="tspan1307">Bedeutung für das</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="155.94835"
+             style="stroke-width:0.150832"
+             id="tspan1311">Erreichen der </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="159.21637"
+             style="stroke-width:0.150832"
+             id="tspan1313">Zielsetzung des e.V.</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.164207px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 82.980025,135.04797 -6.77548,0.28463 1.505971,6.84053 1.577657,-2.26468 c 4.063529,3.94389 1.80132,6.85167 0.82917,11.74379 2.07519,0.24183 3.675106,0.5886 3.675106,0.5886 0.943338,-5.98359 2.660364,-10.5392 -2.704728,-14.88192 0.462514,-0.4335 1.892305,-2.31096 1.892305,-2.31096 z"
+       id="path1352"
+       sodipodi:nodetypes="ccccccccc" />
+    <g
+       id="g1335-7"
+       transform="translate(35.927919,-4.0037046)">
+      <rect
+         style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.425;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1273-5"
+         width="21.261782"
+         height="5.8442712"
+         x="34.078854"
+         y="153.54866" />
+      <g
+         id="g1323-9"
+         transform="matrix(1.6325318,0,0,1.6325318,-24.023567,-70.343189)">
+        <text
+           xml:space="preserve"
+           style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+           x="36.196499"
+           y="139.60829"
+           id="text1277-2"><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="139.60829"
+             style="stroke-width:0.150832"
+             id="tspan1313-1">Spenden</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:#ee9a6d;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.23973,180.90247 c -0.11152,-9.55827 21.67126,-10.15601 21.67241,0.23208 9.9e-4,9.08446 -21.5609,9.32619 -21.67241,-0.23208 z"
+       id="path835-5-2"
+       sodipodi:nodetypes="zsz" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.5861px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="101.72225"
+       y="182.38567"
+       id="text1481"><tspan
+         sodipodi:role="line"
+         id="tspan1479"
+         x="101.72225"
+         y="182.38567"
+         style="stroke-width:0.264583">Mitglied</tspan></text>
+    <g
+       id="g1335-9"
+       transform="translate(62.79377,0.38773094)">
+      <rect
+         style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.495263;stroke-opacity:1"
+         id="rect1273-3"
+         width="30.068329"
+         height="19.941933"
+         x="32.569386"
+         y="139.68147" />
+      <g
+         id="g1323-1"
+         transform="translate(-2.6634933,2.7049729)">
+        <text
+           xml:space="preserve"
+           style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+           x="36.196499"
+           y="139.60829"
+           id="text1277-9"><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="139.60829"
+             style="stroke-width:0.150832"
+             id="tspan1313-3">Mitglieder stimmen</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="142.8763"
+             style="stroke-width:0.150832"
+             id="tspan1572">demokratisch über</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="146.14432"
+             style="stroke-width:0.150832"
+             id="tspan1574">Angelegenheiten des</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="149.41232"
+             style="stroke-width:0.150832"
+             id="tspan1576">e.V. einschließlich der</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="152.68034"
+             style="stroke-width:0.150832"
+             id="tspan1578">Verteilung von</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="155.94835"
+             style="stroke-width:0.150832"
+             id="tspan1580">Geldern ab.</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="fill:#55acd7;fill-opacity:1;stroke:#e6d300;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1652"
+       width="6.1488032"
+       height="2.3121901"
+       x="63.872448"
+       y="105.42879" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.39124px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.137956"
+       x="74.11499"
+       y="101.47173"
+       id="text1604"><tspan
+         sodipodi:role="line"
+         id="tspan1602"
+         x="74.11499"
+         y="101.47173"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956">Software</tspan><tspan
+         sodipodi:role="line"
+         x="74.11499"
+         y="104.46078"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956"
+         id="tspan1606">Lizenzen für</tspan><tspan
+         sodipodi:role="line"
+         x="74.11499"
+         y="107.44983"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956"
+         id="tspan1608">nicht komerzielle</tspan><tspan
+         sodipodi:role="line"
+         x="74.11499"
+         y="110.43888"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956"
+         id="tspan1610">Nutzung</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.39124px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.137956"
+       x="24.036579"
+       y="81.762009"
+       id="text1604-6"><tspan
+         sodipodi:role="line"
+         id="tspan1602-3"
+         x="24.036579"
+         y="81.762009"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956">Software</tspan><tspan
+         sodipodi:role="line"
+         x="24.036579"
+         y="84.75106"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956"
+         id="tspan1606-2">Lizenzen für</tspan><tspan
+         sodipodi:role="line"
+         x="24.036579"
+         y="87.740105"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956"
+         id="tspan1608-0">komerzielle</tspan><tspan
+         sodipodi:role="line"
+         x="24.036579"
+         y="90.729156"
+         style="text-align:center;text-anchor:middle;stroke-width:0.137956"
+         id="tspan1610-6">Nutzung</tspan></text>
+    <rect
+       style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.341395;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1273-3-5"
+       width="21.320364"
+       height="7.5801821"
+       x="26.816216"
+       y="112.0196" />
+    <g
+       id="g1323-1-5"
+       transform="translate(-8.2897429,-24.829971)">
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.196499"
+         y="139.60829"
+         id="text1277-9-4"><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="139.60829"
+           style="stroke-width:0.150832"
+           id="tspan1580-3">Erteilung</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="142.8763"
+           style="stroke-width:0.150832"
+           id="tspan1758">von Lizenzen.</tspan></text>
+    </g>
+    <path
+       style="fill:#ff5e00;fill-opacity:1;stroke:#000000;stroke-width:0.267;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 35.019222,83.514519 c -0.07056,-6.048388 13.713384,-6.426629 13.714106,0.146858 6.33e-4,5.748567 -13.643537,5.901533 -13.714106,-0.146858 z"
+       id="path835-5-7"
+       sodipodi:nodetypes="zsz" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.90204px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.167426"
+       x="42.070183"
+       y="82.632637"
+       id="text1784"><tspan
+         sodipodi:role="line"
+         id="tspan1782"
+         x="42.070183"
+         y="82.632637"
+         style="text-align:center;text-anchor:middle;stroke-width:0.167426">Interne</tspan><tspan
+         sodipodi:role="line"
+         x="42.070183"
+         y="86.260185"
+         style="text-align:center;text-anchor:middle;stroke-width:0.167426"
+         id="tspan1786">Kasse</tspan></text>
+    <path
+       style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 61.436785,126.15467 -7.238935,-1.07371 2.910645,-2.29112 C 56.345741,121.4243 55.390234,114.88906 51.193971,107.82206 43.187482,94.3382 29.703046,108.94491 15.715781,100.98865 9.5534868,97.483405 -11.421413,79.812249 4.0619423,77.030955 -5.9053725,67.260513 1.3093961,59.356878 15.114808,53.742302 c 24.738357,-10.060938 61.575079,-1.612133 61.55568,-1.604567 -0.139632,0.05446 0.104936,-1.560027 0.231653,-2.784521 1.087328,1.251388 2.649795,2.731541 4.144842,4.169486 -1.287521,1.087462 -3.243258,2.744234 -4.871315,4.240058 0.2214,-1.364519 0.273861,-2.062614 0.02241,-3.089604 -16.390444,-0.79807 -31.448685,-7.461448 -59.479315,1.746692 -30.483487,10.01391 -1.508214,30.328407 0.05824,11.855434 2.283169,0.594538 0.421064,1.14142 5.032394,2.353401 -0.866872,4.351004 9.224315,3.94701 14.159025,7.636199 l 1.013902,-1.066506 0.08174,2.960932 -3.027789,0.398218 0.996177,-1.244007 C 32.435291,76.740872 20.878691,75.599979 20.046421,72.372516 15.32544,80.143241 10.731353,80.121912 7.8524474,79.839761 -6.6815581,78.415335 12.032753,95.773376 18.229967,98.502862 c 13.165783,5.798708 23.444511,-5.871489 35.149064,5.536548 -0.185063,-10.444476 3.736008,-17.546349 7.562832,-22.951174 -4.457094,4.377844 -7.649486,3.837437 -10.051789,4.00635 -0.161882,1.212625 -0.216978,2.715061 -0.216978,2.715061 l -2.222993,-3.82596 2.231016,-3.066309 -0.03782,2.195497 c -0.0026,1.10122 6.16791,-0.145203 11.016373,-6.030563 1.727922,-2.097458 21.998629,-16.544234 21.998629,-16.544234 l 2.227673,3.093006 C 83.397204,65.605075 68.8722,75.047688 63.721487,82.68005 54.87264,95.792334 56.65067,109.24616 60.87633,121.21259 l 3.053367,-1.27061 z"
+       id="path1790"
+       sodipodi:nodetypes="cccsscssccccsccccccccsscccccccsccsccc" />
+    <path
+       style="fill:#ffb700;fill-opacity:1;stroke:#000000;stroke-width:0.40575;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.533575,64.625822 c -0.109593,-8.993115 21.299512,-9.555507 21.300633,0.218358 9.83e-4,8.547324 -21.191025,8.774762 -21.300633,-0.218358 z"
+       id="path835-5-7-4"
+       sodipodi:nodetypes="zsz" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.33556px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;stroke-width:0.134744"
+       x="21.287619"
+       y="61.962799"
+       id="text1784-5"><tspan
+         sodipodi:role="line"
+         x="21.287619"
+         y="61.962799"
+         style="text-align:center;text-anchor:middle;stroke-width:0.134744"
+         id="tspan1826">Gewinne aus</tspan><tspan
+         sodipodi:role="line"
+         x="21.287619"
+         y="64.882248"
+         style="text-align:center;text-anchor:middle;stroke-width:0.134744"
+         id="tspan1830">der Vermarktung</tspan><tspan
+         sodipodi:role="line"
+         x="21.287619"
+         y="67.801697"
+         style="text-align:center;text-anchor:middle;stroke-width:0.134744"
+         id="tspan1832">von Lizenzen</tspan></text>
+    <g
+       id="g1335-9-3"
+       transform="translate(-35.973734,32.056013)">
+      <rect
+         style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.519425;stroke-opacity:1"
+         id="rect1273-3-6"
+         width="33.113869"
+         height="19.91777"
+         x="29.047388"
+         y="139.87981" />
+      <g
+         id="g1323-1-7"
+         transform="translate(-6.1975717,2.8912166)">
+        <text
+           xml:space="preserve"
+           style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+           x="36.196499"
+           y="139.60829"
+           id="text1277-9-5"><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="139.60829"
+             style="stroke-width:0.150832"
+             id="tspan1699">Die Mitwirkenden arbei-</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="142.8763"
+             style="stroke-width:0.150832"
+             id="tspan1701">ten selbständig und </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="146.14432"
+             style="stroke-width:0.150832"
+             id="tspan1703">unabhängig an dem </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="149.41232"
+             style="stroke-width:0.150832"
+             id="tspan1713">Projekt. Die Zusammen-</tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="152.68034"
+             style="stroke-width:0.150832"
+             id="tspan1715">arbeit erfolgt auf Basis </tspan><tspan
+             sodipodi:role="line"
+             x="36.196499"
+             y="155.94835"
+             style="stroke-width:0.150832"
+             id="tspan1739">von Freiwilligkeit.</tspan></text>
+      </g>
+    </g>
+    <rect
+       style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.337489;stroke-opacity:1"
+       id="rect1273-3-7-2"
+       width="25.223053"
+       height="11.038937"
+       x="-13.706976"
+       y="85.94503" />
+    <g
+       id="g1323-1-4-7"
+       transform="translate(-48.860968,-50.952575)">
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.196499"
+         y="139.60829"
+         id="text1277-9-43-0"><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="139.60829"
+           style="stroke-width:0.150832"
+           id="tspan1912-3">Ausschüttung von</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="142.8763"
+           style="stroke-width:0.150832"
+           id="tspan1785">Gewinnen an den</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="146.14432"
+           style="stroke-width:0.150832"
+           id="tspan1787">e. V</tspan></text>
+    </g>
+    <rect
+       style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.297479;stroke-opacity:1"
+       id="rect1273-3-7-6"
+       width="30.266113"
+       height="7.1476102"
+       x="61.28722"
+       y="62.686295" />
+    <g
+       id="g1323-1-4-0"
+       transform="translate(26.153233,-74.191302)">
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.196499"
+         y="139.60829"
+         id="text1277-9-43-6"><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="139.60829"
+           style="stroke-width:0.150832"
+           id="tspan1912-6">Investition in</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="142.8763"
+           style="stroke-width:0.150832"
+           id="tspan1827">Anteile an der GMBH</tspan></text>
+    </g>
+    <rect
+       style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.337489;stroke-opacity:1"
+       id="rect1273-3-7-2-1"
+       width="25.223053"
+       height="11.038937"
+       x="34.5574"
+       y="46.052944" />
+    <g
+       id="g1323-1-4-7-8"
+       transform="translate(-0.5965899,-90.844666)">
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.196499"
+         y="139.60829"
+         id="text1277-9-43-0-7"><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="139.60829"
+           style="stroke-width:0.150832"
+           id="tspan1912-3-9">Ausschüttung von</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="142.8763"
+           style="stroke-width:0.150832"
+           id="tspan1785-2">Gewinnen an die</tspan><tspan
+           sodipodi:role="line"
+           x="36.196499"
+           y="146.14432"
+           style="stroke-width:0.150832"
+           id="tspan1787-0">Investoren</tspan></text>
+    </g>
+    <rect
+       style="fill:#ffeeff;fill-opacity:0.887026;stroke:#000000;stroke-width:0.667448;stroke-opacity:1"
+       id="rect1273-37"
+       width="27.415407"
+       height="39.723225"
+       x="98.71003"
+       y="84.438232" />
+    <g
+       id="g1323-5"
+       transform="translate(63.257978,-45.349514)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.61441px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.150832"
+         x="36.329578"
+         y="132.33342"
+         id="text1277-92"><tspan
+           sodipodi:role="line"
+           x="36.329578"
+           y="132.33342"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.150832"
+           id="tspan1313-12">Zielsetzung:</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.522625"
+         y="136.99814"
+         id="text1277-92-9"><tspan
+           sodipodi:role="line"
+           x="36.522625"
+           y="136.99814"
+           style="stroke-width:0.150832"
+           id="tspan1313-12-3">Verbesserung der</tspan><tspan
+           sodipodi:role="line"
+           x="36.522625"
+           y="140.26614"
+           style="stroke-width:0.150832"
+           id="tspan1995">Debattenkultur.</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.5861px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         x="86.169495"
+         y="175.37964"
+         id="text2003"><tspan
+           sodipodi:role="line"
+           id="tspan2001"
+           x="86.169495"
+           y="175.37964"
+           style="stroke-width:0.264583" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.824123"
+         y="144.33713"
+         id="text1277-92-9-1"><tspan
+           sodipodi:role="line"
+           x="36.824123"
+           y="144.33713"
+           style="stroke-width:0.150832"
+           id="tspan1995-4">Förderung des </tspan><tspan
+           sodipodi:role="line"
+           x="36.824123"
+           y="147.60513"
+           style="stroke-width:0.150832"
+           id="tspan2035">selbstbestimmten</tspan><tspan
+           sodipodi:role="line"
+           x="36.824123"
+           y="150.87315"
+           style="stroke-width:0.150832"
+           id="tspan2039">Handelns.</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:2.61441px;line-height:1.25;font-family:sans-serif;stroke-width:0.150832"
+         x="36.734226"
+         y="155.17606"
+         id="text1277-92-9-7"><tspan
+           sodipodi:role="line"
+           x="36.734226"
+           y="155.17606"
+           style="stroke-width:0.150832"
+           id="tspan1995-45">Stärkung der </tspan><tspan
+           sodipodi:role="line"
+           x="36.734226"
+           y="158.44406"
+           style="stroke-width:0.150832"
+           id="tspan2073">gesellschaftlichen</tspan><tspan
+           sodipodi:role="line"
+           x="36.734226"
+           y="161.71208"
+           style="stroke-width:0.150832"
+           id="tspan2075">Wertschätzung von</tspan><tspan
+           sodipodi:role="line"
+           x="36.734226"
+           y="164.98009"
+           style="stroke-width:0.150832"
+           id="tspan2079">gemeinwohlorien-</tspan><tspan
+           sodipodi:role="line"
+           x="36.734226"
+           y="168.24811"
+           style="stroke-width:0.150832"
+           id="tspan2083">tiertem Verhalten</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="51.852276"
+       y="19.809042"
+       id="text2093"><tspan
+         sodipodi:role="line"
+         id="tspan2091"
+         x="51.852276"
+         y="19.809042"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;stroke-width:0.264583">Mögliche Rahmenbedingungen für</tspan><tspan
+         sodipodi:role="line"
+         x="51.852272"
+         y="27.746542"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         id="tspan2095">selbstbestimmtes Arbeiten im Team</tspan></text>
+  </g>
+</svg>

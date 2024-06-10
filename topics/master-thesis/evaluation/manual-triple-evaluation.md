@@ -64,9 +64,7 @@ The average triviality score of all valid triples:
 |                          | gpt 3.5 turbo correlated | gpt 4 turbo correlated | gpt 3.5 turbo free association | gpt 4 turbo free association |
 | ------------------------ | ------------------------ | ---------------------- | ------------------------------ | ---------------------------- |
 | Average triviality score | 5.70±0.26                | 5.75±0.25              | 5.61±0.21                      | 5.93±0.20                    |
-
-```["Dark matter halo", "is composed of", "Dark matter"], true, true, 0, 10]```
-```["Hubbard model", "predicts", "Mott insulator phase"], true, true, 0, 0],```
+The average triviality scores of the four datasets do not differ much outside the error. They all contain trivial triples like  ```["Dark matter halo", "is composed of", "Dark matter"]``` which has a triviality score of 10 and less trivial triples like ```["Hubbard model", "predicts", "Mott insulator phase"]``` which has a triviality score of 0.
 
 To display the properties of the true triples, a heat map of the context dependence plotted against the triviality was created for all four datasets.
 
@@ -83,3 +81,12 @@ gpt 3.5 turbo free association:
 gpt 4 turbo free association:
 
 ![](./images/free_ass_gpt4_heatmap.svg)
+All four data sets contain a broad spectrum of triples with different triviality and content dependency scores. In addition, all have a high concentration of not concept dependent triples with a maximum at a triviality value between 6 and 10. In all four cases triples with very high and very low triviality are relatively rare. The correlated triples datasets have a higher tendency to contain triples higher content dependency than the freely associated triples.
+
+## Conclusion
+
+In conclusion the valid freely associated triples of both models ```gpt-4-turbo``` and ```gpt-3.5-turbo``` have a very high quality and a higher then 98% chance of being true. The correlated triples of both models have a higher chance of being valid but a significantly smaller chance of being true. In both categories validness and truth the ```gpt-4-turbo``` model performs better than the ```gpt-3.5-turbo``` model.
+
+
+[Code](https://github.com/gratach/master-adapted-subtopic-tree-generation/blob/aa9e8ff41786c8921ccb4b965b1fe69dc96aa4c0/manual_triple_evaluation.py)
+[Data](https://github.com/gratach/master-database-files/tree/4fb1e190ab7e70838d42c8361bd01140d94e5c49/master-adapted-subtopic-tree-generation/triples)

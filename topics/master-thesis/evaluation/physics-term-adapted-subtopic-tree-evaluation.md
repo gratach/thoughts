@@ -61,3 +61,6 @@ In principle the classification of the mentioned examples is understandable and 
 
 To test the efficiency of the subtopic network the [average number of viewed terms per-search evaluation](subtopic-tree-average-number-of-viewed-terms-per-search-evaluation.md) was performed. The total number of viewed terms per search is:
 $144 \pm 13$. This is ==13.8 ± 1.2%== of the total physics terms. The viewed bytes are ==17.5 ± 1.5%== of the total term byte information.
+
+[Code](https://github.com/gratach/master-adapted-subtopic-tree-generation/blob/65a374f65a1bec8a2a8e9d32636b29f9bc52ef0d/subtopic_tree_generation.py)
+[Data](https://github.com/gratach/master-database-files/tree/fbc09d739139d9fff837831db46cfd9e19f5cf30/master-adapted-subtopic-tree-generation/trees/subd)

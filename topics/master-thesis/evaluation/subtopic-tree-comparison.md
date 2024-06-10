@@ -26,3 +26,5 @@ Here is a table statistical properties of the subtopic trees created with differ
 | fr_as_sb_15  | 3.31               | 5.03                                                       | 10.189 ± 0.929%               | 9.295 ± 0.855%                | 74.36 ± 2.47%                         |
 | fr_as_rsb_15 | 4.41               | 3.16                                                       | 15.46 ± 3.07%                 | 14.45 ± 2.84%                 | 70.68 ± 3.29%                         |
 | fr_as_sb_10  | 3.86               | 4.03                                                       | 7.697 ± 0.962%                | 7.642 ± 0.962%                | 76.62 ± 2.99%                         |
+[Code](https://github.com/gratach/master-adapted-subtopic-tree-generation/blob/65a374f65a1bec8a2a8e9d32636b29f9bc52ef0d/subtopic_tree_generation.py)
+[Data](https://github.com/gratach/master-database-files/tree/fbc09d739139d9fff837831db46cfd9e19f5cf30/master-adapted-subtopic-tree-generation/trees)

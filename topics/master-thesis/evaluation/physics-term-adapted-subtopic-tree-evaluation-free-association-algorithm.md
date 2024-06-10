@@ -10,3 +10,6 @@ The subtopic tree contains ==1038 leafs== and 651 supporting junction nodes. In 
 The following plot shows the number of junction nodes that have a given number of subbranches attached to them.
 
 ![](./images/number-of-subbranches-plot-free-association-algorithm.svg)
+
+[Code](https://github.com/gratach/master-adapted-subtopic-tree-generation/blob/65a374f65a1bec8a2a8e9d32636b29f9bc52ef0d/subtopic_tree_generation.py)
+[Data](https://github.com/gratach/master-database-files/tree/fbc09d739139d9fff837831db46cfd9e19f5cf30/master-adapted-subtopic-tree-generation/trees/fr_as_ex)

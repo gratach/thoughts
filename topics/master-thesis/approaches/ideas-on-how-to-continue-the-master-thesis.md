@@ -14,3 +14,5 @@
 * Create a semantic network of questions and answers about physics topics
 * Create a collection of the most versatil and meaningful predicates
 	* Generate examples of semantic triples that are using a specific predicate
+* Create a formula network
+* Experimenting with merging mechanisms of concepts

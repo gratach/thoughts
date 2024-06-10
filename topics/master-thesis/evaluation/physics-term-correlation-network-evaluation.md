@@ -49,3 +49,6 @@ Gamma-ray astronomy
 * Gamma ray burst
 * Synchrotron emission
 * Supernova
+
+[Code](https://github.com/gratach/master-adapted-subtopic-tree-generation/blob/65a374f65a1bec8a2a8e9d32636b29f9bc52ef0d/correlation_graph_generation.py)
+[Data](https://github.com/gratach/master-database-files/tree/50ce8531f5b279ff27ee8eba68a202487d8b45ea/master-adapted-subtopic-tree-generation/correlations)
