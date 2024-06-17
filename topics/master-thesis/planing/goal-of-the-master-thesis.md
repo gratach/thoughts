@@ -5,4 +5,4 @@ The goal of this master thesis is to explore different applications of semantic 
 * Is it possible to extract the internal physics knowledge of a large language model as semantic network?
 * What methods exist to generate physics knowledge graphs?
 * What is the quality of the generated data?
-* What are possible applications of these methods?
+* What are [possible applications](possible-applications-of-physics-knowledge-graphs.md) of these methods?

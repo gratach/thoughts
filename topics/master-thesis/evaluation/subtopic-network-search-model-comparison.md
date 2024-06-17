@@ -19,4 +19,4 @@ For the search a [dataset of 50 physics terms](dataset-of-50-physic-terms.md) is
 
 A keyword is considered as found if it occurs within the string of the selected subtopic. Upper and lower case letters are being ignored
 
-The errors are calculated based on [error-of-binary-event-probability](../formula/error-of-binary-event-probability.md)
+The errors are calculated based on [error-of-binary-event-probability](error-of-binary-event-probability.md)

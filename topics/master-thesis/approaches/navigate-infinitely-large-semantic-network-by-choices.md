@@ -7,3 +7,5 @@ This approach places high demands on the structure of the network of choices. On
 ### How could such semantic network of choices look like?
 
 A semantic network can be navigated by jumping from one concept to the next by following the connections between the pairs of concepts that are linked by a predicate. The problem with infinitely large semantic networks is that there is potentially an infinitely large number of semantic triples to choose from. A navigation of finite choices could be achieved by organizing those semantic triples into a tree structure.
+
+See also [navigate-semantic-triples-by-finite-choices](navigate-semantic-triples-by-finite-choices.md)

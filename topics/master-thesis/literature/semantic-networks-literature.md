@@ -7,3 +7,10 @@ Ontology and knowledge graph creation with LLMs:
 
 Crawling the Internal Knowledge-Base of Language Models
 [arxiv](https://arxiv.org/abs/2301.12810)
+
+
+## Abstract meaning representation
+
+[Abstract Meaning Representation for Sembanking](https://aclanthology.org/W13-2322.pdf)
+
+[Transition-based Neural Parser (Pypi project)](https://pypi.org/project/transition-neural-parser/)

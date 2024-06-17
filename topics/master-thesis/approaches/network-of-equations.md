@@ -1,6 +1,6 @@
-# Physics formula network
+# Network of equations
 
-A semantic network of physic terms, that are connected by natural language expressions as discussed in [[manual-triple-evaluation]] can be a powerful knowledge representation framework. However, some aspects of physics are usually represented in the form of formulas. Even if there are approaches to represent even complicated formulas as natural language ([source](http://islab.donga.ac.kr/Information/aece_ys.pdf)) it is more convenient for humans to read them represented by mathematical symbols.
+A semantic network of physic terms, that are connected by natural language expressions as discussed in [manual-triple-evaluation](../evaluation/manual-triple-evaluation.md) can be a powerful knowledge representation framework. However, some aspects of physics are usually represented in the form of formulas. Even if there are approaches to represent even complicated formulas as natural language ([source](http://islab.donga.ac.kr/Information/aece_ys.pdf)) it is more convenient for humans to read them represented by mathematical symbols.
 
 In order to take this fact into account when designing the semantic network, an ontology is proposed that incorporates formulas as nodes into the network. The graphic below shows an example of the Planck relation displayed as knowledge graph.
 ![](./images/planck_relation.png)
@@ -46,4 +46,13 @@ Not all the generated formulas of ```gpt-4-turbo``` are correct. Here is an exam
 ![](./images/Energy_radiated_by_a_black_body.png)
 The task was to generate a formula for the energy radiated by a black body. The created formula is incorrect because the expression $\sigma A T^4$ is actually not equal to the energy $E$ but to the radiated power $\phi$. The correct formula would be  $\sigma A T^4 t = E$ where $t$ is the time span for that the radiated energy of the black body is measured. 
 
-[Source code](https://github.com/gratach/master-experimental/blob/21ba21b58a6b71e6c38512374c9fcb9673646626/visjs_svg_formula.ipynb)
+Out of 20 tested formulas from different areas 4 formulas in total where incorrect. Besides the wrong black body radiation formula the errors where:
+* Forgotten brackets in the forth Maxwell equation.
+* Completely wrong Tsiolkovsky rocket equation
+* Wrong explanation for the variable $c$ in the equation for the Doppler effect (Speed of light instead of speed of sound)
+
+[network-of-multiple-equations](network-of-multiple-equations.md)
+
+[Data](https://github.com/gratach/master-database-files/tree/0aa58c96d11212d5dcdfb46d77e70daec90a97ab/master-experimental/visjs_svg_formula_graphs)
+[Code](https://github.com/gratach/master-experimental/blob/21ba21b58a6b71e6c38512374c9fcb9673646626/visjs_svg_formula.ipynb)
+

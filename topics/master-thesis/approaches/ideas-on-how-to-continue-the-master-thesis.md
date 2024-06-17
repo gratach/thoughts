@@ -12,7 +12,9 @@
 * Explore ways to visualize the semantic network
 * Explore how strong different areas of physics are connected to each other by counting the number of semantic connections that link concepts of different areas.
 * Create a semantic network of questions and answers about physics topics
+	* [test-ability-of-telling-apart-lies-from-truth-in-different-areas](test-ability-of-telling-apart-lies-from-truth-in-different-areas.md)
 * Create a collection of the most versatil and meaningful predicates
 	* Generate examples of semantic triples that are using a specific predicate
 * Create a formula network
 * Experimenting with merging mechanisms of concepts
+* Physics ontologie creation with LLMs
