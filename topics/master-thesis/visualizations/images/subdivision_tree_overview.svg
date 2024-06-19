@@ -9,6 +9,9 @@
    viewBox="0 0 913.50933 859.62346"
    sodipodi:docname="subdivision_tree_overview.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="subdivision_tree_overview_anoted.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -160,13 +163,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.4699045"
-     inkscape:cx="593.91612"
-     inkscape:cy="326.21166"
+     inkscape:zoom="0.73495228"
+     inkscape:cx="594.59643"
+     inkscape:cy="540.85144"
      inkscape:window-width="1916"
      inkscape:window-height="1036"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="20"
      inkscape:window-maximized="1"
      inkscape:current-layer="g8" />
   <g
@@ -5213,7 +5216,7 @@ AACpBAAglQAApBIAgFQCAJBKAABSCQBAKgEASCUAAOoBsoDym+UZQnEAAAAASUVORK5CYII=
          x="719.61853"
          y="130.78497"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.0342px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d6875d;fill-opacity:1;stroke:none;stroke-width:1.12643;stroke-dasharray:none"
-         id="tspan1952-7">Astro physics</tspan></text>
+         id="tspan1952-7">Astrophysics</tspan></text>
     <path
        style="fill:#4cc06f;stroke:#000000;stroke-width:7.1811;stroke-linejoin:round;marker-end:url(#Arrow1L)"
        d="m 367.33369,394.05293 23.30218,46.00545"

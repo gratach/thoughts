@@ -24,7 +24,7 @@ The length of the master thesis should be ~60 pages
 	* What is a subtopic tree
 	* The subdivision algorithm
 	* The free association algorithm
-	* [Subtopic tree evaluation methods](../evaluation/subtopic-tree-average-number-of-viewed-terms-per-search-evaluation.md)
+	* [Subtopic tree evaluation methods](subtopic-tree-average-number-of-viewed-terms-per-search-evaluation.md)
 * Generating semantic triples of natural language (16 Pages)
 	* What are the criteria for well formed triples ([see evaluation process validness](../evaluation/manual-triple-evaluation.md))
 	* Triple generation using Stanford open IE
@@ -33,7 +33,7 @@ The length of the master thesis should be ~60 pages
 	* Triple generation with LLMs
 		* Correlated triple generation
 		* Freely associated triples
-	* [Evaluation metric](../evaluation/false-choices-per-correct-choice-compared-to-random.md) for the correlated triples
+	* [Evaluation metric](false-choices-per-correct-choice-compared-to-random.md) for the correlated triples
 	* [Manual triple evaluation](../evaluation/manual-triple-evaluation.md)
 	* [Navigating the triples](../approaches/navigate-semantic-triples-by-finite-choices.md)
 	* [Displaying the triples in a 2D plane](../approaches/mapping-a-high-degree-graph-to-a-2D-area.md)
