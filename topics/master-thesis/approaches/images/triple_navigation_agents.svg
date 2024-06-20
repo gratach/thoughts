@@ -422,40 +422,40 @@
        id="rect63050-8-9"
        width="210.57674"
        height="46.756828"
-       x="59.627537"
-       y="342.64072" />
+       x="58.816071"
+       y="230.29686" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976;stroke-linejoin:round;stroke-dasharray:none"
-       x="161.83142"
-       y="370.95245"
+       x="161.01996"
+       y="258.60864"
        id="text66850-5-9"><tspan
          sodipodi:role="line"
          id="tspan66848-0-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976"
-         x="161.83142"
-         y="370.95245">Selects option</tspan></text>
+         x="161.01996"
+         y="258.60864">Selects option</tspan></text>
     <rect
        style="fill:#9dd6e2;fill-opacity:1;stroke:#000000;stroke-width:2.30769;stroke-linejoin:round;stroke-dasharray:none"
        id="rect63050-8-2-4"
        width="217.10823"
        height="67.626556"
-       x="325.38638"
-       y="296.8006" />
+       x="324.57492"
+       y="184.45677" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976;stroke-linejoin:round;stroke-dasharray:none"
-       x="435.5123"
-       y="324.90067"
+       x="434.70084"
+       y="212.55681"
        id="text66850-5-5-7"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976"
-         x="435.5123"
-         y="324.90067"
+         x="434.70084"
+         y="212.55681"
          sodipodi:role="line"
          id="tspan67679">Asks what part of triple</tspan><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976"
-         x="435.5123"
-         y="348.23404"
+         x="434.70084"
+         y="235.89018"
          sodipodi:role="line"
          id="tspan67681"> should be exchanged</tspan></text>
     <rect
@@ -463,22 +463,22 @@
        id="rect63050-8-2-4-1"
        width="217.10823"
        height="67.626556"
-       x="322.75031"
-       y="186.28372" />
+       x="324.9411"
+       y="295.51889" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976;stroke-linejoin:round;stroke-dasharray:none"
-       x="432.87619"
-       y="214.38376"
+       x="435.06699"
+       y="323.61893"
        id="text66850-5-5-7-1"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976"
-         x="432.87619"
-         y="214.38376"
+         x="435.06699"
+         y="323.61893"
          sodipodi:role="line"
          id="tspan67681-3">Provides options for</tspan><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976"
-         x="432.87619"
-         y="237.71713"
+         x="435.06699"
+         y="346.9523"
          sodipodi:role="line"
          id="tspan67962">new topics of the triple</tspan></text>
     <rect
@@ -642,7 +642,7 @@
        sodipodi:nodetypes="csc" />
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.55906;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow2-0)"
-       d="m 323.80286,308.66275 c 0,0 -98.8635,-0.56217 -143.62556,-1.27215 -22.43643,-0.35604 -22.34395,16.51275 -22.34395,16.51275"
+       d="m 322.99139,196.3189 c 0,0 -98.8635,-0.56217 -143.62556,-1.27215 -22.43643,-0.35604 -22.34395,16.51275 -22.34395,16.51275"
        id="path62962-2"
        sodipodi:nodetypes="csc" />
     <path
@@ -670,22 +670,22 @@
        id="rect63050-8-9-1"
        width="210.57674"
        height="46.756828"
-       x="56.965767"
-       y="234.53041" />
+       x="59.156563"
+       y="343.76559" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976;stroke-linejoin:round;stroke-dasharray:none"
-       x="159.16963"
-       y="262.84204"
+       x="161.36043"
+       y="372.07721"
        id="text66850-5-9-9"><tspan
          sodipodi:role="line"
          id="tspan66848-0-0-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.88976"
-         x="159.16963"
-         y="262.84204">Selects option</tspan></text>
+         x="161.36043"
+         y="372.07721">Selects option</tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:7.55906;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#Arrow2-0-4)"
-       d="m 319.96044,200.97644 c 0,0 -98.86352,-0.56217 -143.62556,-1.27215 -22.43645,-0.35603 -22.34396,16.51276 -22.34396,16.51276"
+       d="m 322.15124,310.21161 c 0,0 -98.86352,-0.56217 -143.62556,-1.27215 -22.43645,-0.35603 -22.34396,16.51276 -22.34396,16.51276"
        id="path62962-2-9"
        sodipodi:nodetypes="csc" />
     <path
@@ -733,6 +733,6 @@
        xml:space="preserve"
        transform="translate(27.16756,-68.320993)"
        id="text91992"
-       style="font-size:29.3333px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect91994);fill:#000000;stroke-width:2.308;stroke-linejoin:round;stroke-dasharray:none" />
+       style="font-size:29.3333px;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:center;white-space:pre;shape-inside:url(#rect91994);display:inline;fill:#000000;stroke-width:2.308;stroke-linejoin:round;stroke-dasharray:none" />
   </g>
 </svg>
