@@ -19,21 +19,21 @@ This example also shows that the examiner agent is not completely strict in the 
 
 Here is an list of five typical questions from the same dataset and the according triples that have been found by the navigation process:
 
-| Question                                                                   | Triple                                                                                                                                  |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| What does the Tesla unit measure?                                          | `["Magnetic field", "measured in", "Tesla"]`                                                                                            |
-| What attracts objects towards Earth?                                       | `["Physics", "includes", "Classical Mechanics"]`                                                                                        |
-| What allows particles to overcome potential barriers in quantum mechanics? | `["Quantum tunneling", "exploits", "wave-particle duality"]`                                                                            |
-| Which planet has an extensive ring system?                                 | `["Saturn", "is a mention in key terms of", "Planetary rings"]`                                                                         |
-| What establishes thermal equilibrium between two objects?                  | `["Zeroth Law of Thermodynamics", "implies that", "two systems in equilibrium with a third system are in equilibrium with each other"]` |
+| Question                                                                   | Triple                                                           |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| What does the Tesla unit measure?                                          | `["Magnetic flux density", "is quantified in", "Tesla"]`         |
+| What does a laser emit?                                                    | `["Laser", "utilizes", "Electromagnetic waves in Science"]`      |
+| What allows particles to overcome potential barriers in quantum mechanics? | `["Quantum tunneling", "exploits", "wave-particle duality"]`     |
+| Which planet has an extensive ring system?                                 | `["Saturn", "has the most extensive", "Planetary rings"]`        |
+| What state of matter is composed of charged particles?                     | `["Ionosphirical plasma", "yields", "highly ionized particles"]` |
 
-Out of the 100 triple search runs, ```gpt-3.5-turbo``` completed 42 successful while ```gpt-4-turbo``` completed 57 successful. The calculated [decision cost](../equations/decision-cost.md) of non interrupted searches was:
+Out of the 100 triple search runs, ```gpt-3.5-turbo``` completed 27 successful while ```gpt-4-turbo``` completed 43 successful. The calculated [decision cost](../equations/decision-cost.md) of non interrupted searches was:
 
 |               | gpt-3.5-turbo | gpt-4-turbo |
 | ------------- | ------------- | ----------- |
-| decision cost | 54.3 ± 7.8    | 33.5 ± 3.9  |
+| decision cost | 91.1 ± 17.0   | 50.7 ± 7.1  |
 
 These numbers correspond to the average number of navigation decisions the navigation agent has to make to find a question answering triple if there are 10 options available per decision.
 
-[Data](https://github.com/gratach/master-database-files/tree/1db1e8c6429b09f469e9c15ea17b07eeb2835bfb/master-experimental/navigate_semantic_triples_evaluation)
-[Code](https://github.com/gratach/master-experimental/blob/4f558032d96e6454d0940087e599b58f65bfd452/navigate_semantic_triples_evaluation.ipynb)
+[Data](https://github.com/gratach/master-database-files/tree/6e92a36e3c48b92fb6dd9ff4063f97171e52833a/master-experimental/navigate_semantic_triples_evaluation)
+[Code](https://github.com/gratach/master-experimental/blob/76a419620e759103cfa6d397931417660e965e9e/navigate_semantic_triples_evaluation.ipynb)
