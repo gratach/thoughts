@@ -36,3 +36,6 @@ Here are some example terms selected from a depth of 4 in the subtopic tree:
 ```
 "Galaxy clustering statistics", "Partial Polarization", "Solar wind contributions to dust charging", "Scaling transformations", "Photovoltaic cells", "Quantum entanglement in cosmology", "Half-life of Uranium-238"
 ```
+
+[Code](https://github.com/gratach/master-experimental/blob/fe292da66c71d86032288a259a474089b8d28ce7/generating_termlists.ipynb)
+[Data](https://github.com/gratach/master-database-files/tree/77cd97ecef0083fa1ab878a399fa5050b3847994/master-experimental/generating_termlists/termlists)
