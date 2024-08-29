@@ -71,15 +71,4 @@ This example shows, that a derivation, that can be described by words and formul
 [Data](https://github.com/gratach/master-database-files/tree/3ffd25c2b5581bc081e97a1cbc83a157f5644241/master-experimental/equation_networks_derivation)
 
 
-[^fang]:```
-@misc
-{fang2024mathodysseybenchmarkingmathematicalproblemsolving,
-      title={MathOdyssey: Benchmarking Mathematical Problem-Solving Skills in Large Language Models Using Odyssey Math Data}, 
-      author={Meng Fang and Xiangpeng Wan and Fei Lu and Fei Xing and Kai Zou},
-      year={2024},
-      eprint={2406.18321},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2406.18321}, 
-} 
 ```

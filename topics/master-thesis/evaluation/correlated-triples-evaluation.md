@@ -22,6 +22,8 @@ Of this 10 examples the triple ```["Bose gas", "is equivalent to", "Fermi gas"]`
 The most used predicates are plotted in the following bar graph:
 
 ![](./images/predicate_quantity_chart.svg)
+The average word length of the predicates is 2.32 $\pm$ 0.02 words
+
 The generated triples were classified into the tree categories "true", "false" and "not understandable" ```by gpt-3.5-turbo```. The result is:
 
 | Category           | Percentage of total triples |

@@ -46,14 +46,13 @@ The length of the master thesis should be ~60 pages
 		* [generating-networks-of-questions-and-answers](../evaluation/generating-networks-of-questions-and-answers.md)
 		*  [checking-the-knowledge-consistency-of-large-language-models](../evaluation/checking-the-knowledge-consistency-of-large-language-models.md)
 * Extracting semantic data from scientific texts
-	* ==Building a citation graph== (3 Pages)
-		* What is a cite graph 
-		* How to obtain citation data
-		* How to handle the data
+	* ==Building a citation graph== using the [semantic-scholar-api](../extraction/semantic-scholar-api.md)
+	* (3 Pages) 
+		* [hepml-citation-graph](../extraction/hepml-citation-graph.md)
 	* Triple generation using Stanford open IE
 		* Paper content extraction
 		* Quality evaluation
-	* ==Triple extraction using LLMs==
+	* [converting-sentences-into-semantic-triples](../evaluation/converting-sentences-into-semantic-triples.md)
 	* Creating a semantic network of sentences (5 Pages)
 		* [Manual creation](../approaches/semantic-network-of-sentences.md) of a semantic network of sentences
 		* [Automated creation](../approaches/semantic-network-of-sentences.md) of a semantic network of sentences
