@@ -11,7 +11,7 @@ A requirement for the project is a software product that can be licensed both fo
 
 The software development project can than be organized in the following way:
 
-![](./images/organization-plan.svg)
+![](organization-plan.svg)
 
 The core element of the project is a non profit organization. This organization has a common good-oriented objective and is democratically managed by its members. It has a pot of money that is meant to be used for paying people proportional to their work they have done to serve the objectives of the organization.
 

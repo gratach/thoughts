@@ -6,9 +6,11 @@ The length of the master thesis should be ~60 pages
 
 ## Alternative table of contents
 
+[abstract](../writing/abstract.md)
+
 * Introduction
 	* (???) [The importance of knowledge representation for scientific progress in physics](../writing/the-importance-of-knowledge-representation-for-scientific-progress-in-physics.md)
-	* What is a semantic network
+	* [what-is-a-semantic-network](../writing/what-is-a-semantic-network.md)
 	* What is an ontology
 	* Types of semantic networks
 	* How is physics knowledge structured
@@ -36,6 +38,7 @@ The length of the master thesis should be ~60 pages
 		* Triple generation with LLMs
 			* Correlated triple generation [correlated-triples-evaluation](../evaluation/correlated-triples-evaluation.md)
 			* Freely associated triples [free-associated-triples-evaluation](../evaluation/free-associated-triples-evaluation.md)
+			* [comparison-of-frAss-and-subd-for-different-parameters](../evaluation/comparison-of-frAss-and-subd-for-different-parameters.md)
 		* [Evaluation metric](false-choices-per-correct-choice-compared-to-random.md) for the correlated triples
 		* [Manual triple evaluation](../evaluation/manual-triple-evaluation.md)
 		* [Displaying the triples in a 2D plane](../approaches/mapping-a-high-degree-graph-to-a-2D-area.md)
@@ -46,7 +49,7 @@ The length of the master thesis should be ~60 pages
 		* [generating-networks-of-questions-and-answers](../evaluation/generating-networks-of-questions-and-answers.md)
 		*  [checking-the-knowledge-consistency-of-large-language-models](../evaluation/checking-the-knowledge-consistency-of-large-language-models.md)
 * Extracting semantic data from scientific texts
-	* ==Building a citation graph== using the [semantic-scholar-api](../extraction/semantic-scholar-api.md)
+	* Building a citation graph using the [semantic-scholar-api](../extraction/semantic-scholar-api.md)
 	* (3 Pages) 
 		* [hepml-citation-graph](../extraction/hepml-citation-graph.md)
 	* Triple generation using Stanford open IE
@@ -56,12 +59,6 @@ The length of the master thesis should be ~60 pages
 	* Creating a semantic network of sentences (5 Pages)
 		* [Manual creation](../approaches/semantic-network-of-sentences.md) of a semantic network of sentences
 		* [Automated creation](../approaches/semantic-network-of-sentences.md) of a semantic network of sentences
-* Handling equations with semantic networks
-	* Creating a semantic network of equations (5 Pages)
-		* [Technical realization](../approaches/network-of-equations.md)
-		* [Generating the network of equation with LLMs](../approaches/network-of-equations.md)
-		* Combining [multiple equations](../approaches/network-of-multiple-equations.md) into one network
-	* [Representing a derivation as knowledge graph](../evaluation/represent-a-derivation-as-a-semantic-network.md)
 * Creating a physics ontology
 	* Creating a specified semantic network (4 Pages)
 		* Introduction to the topic area of top tagging
@@ -72,6 +69,12 @@ The length of the master thesis should be ~60 pages
 		* [generating-a-physics-ontology](../approaches/generating-a-physics-ontology.md)
 		* [generate-knowledge-graph-based-on-an-ontology](../approaches/generate-knowledge-graph-based-on-an-ontology.md)
 	* (???) Combining different types of semantic networks (???)
+* Handling equations with semantic networks
+	* Creating a semantic network of equations (5 Pages)
+		* [Technical realization](../approaches/network-of-equations.md)
+		* [Generating the network of equation with LLMs](../approaches/network-of-equations.md)
+		* Combining [multiple equations](../approaches/network-of-multiple-equations.md) into one network
+	* [Representing a derivation as knowledge graph](../evaluation/represent-a-derivation-as-a-semantic-network.md)
 * Summary and outlook
 	* Summary (1 Page)
 	* [Possible applications](possible-applications-of-physics-knowledge-graphs.md) (4 Pages)

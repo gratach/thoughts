@@ -8,6 +8,8 @@ There are many different types of semantic networks [^sowa]. They differ in what
 
 One very common type of a semantic networks, that is easy to read and understand by humans is a network consisting of semantic triples of natural language.
 
+![](./images/semantic_network.svg)
+
 
 [^Sowa]: [John F. Sowa](https://en.wikipedia.org/wiki/John_F._Sowa "John F. Sowa") (1987). ["Semantic Networks"](http://www.jfsowa.com/pubs/semnet.htm). In Stuart C Shapiro (ed.). _Encyclopedia of Artificial Intelligence_. [Archived](https://web.archive.org/web/20181008185537/http://www.jfsowa.com/pubs/semnet.htm) from the original on 8 October 2018. Retrieved 29 April 2008.
 

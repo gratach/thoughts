@@ -8,11 +8,27 @@ These two values should be extracted from a small number of papers to compare th
 
 ![](./images/R30Onto.svg)
 
+Extracted values:
+number of papers used for table extraction: 39
+number of papers used for value extraction: 10
+number of extracted tables: 124
+number of tables used for R30 extraction: 13
+number of tables used for parameter count extraction: 9
+number of extracted models: 39
+number of extracted R30 values: 54
+number of extracted parameter count values: 48
+
+RDF graph:
+Number of named individuals in the ontology: 386 
+Number of connections between named individuals in the ontology: 603 
+Number of triples in the ontology: 1631
+
+
 (old)
 [Code](https://github.com/gratach/master-thesis/blob/main/semantic_paper/scripts/collect_R30_values.py)
 [Data](https://github.com/gratach/master-database-files/blob/c7985e94d53392ba468c72cb238b25783146e2b1/master-thesis/r30-evaluation/referenced_papers/parameters.yaml)
 
 (new)
-[Code](https://github.com/gratach/master-experimental/blob/221410539c433d9d5e76f684c13c5caf7b225514/populate_knowledge_graph_with_r30.ipynb)
+[Code](https://github.com/gratach/master-experimental/blob/d8fdc65b320011bfbe7490933cea5c9648b44020/populate_knowledge_graph_with_r30.ipynb)
 [Data (graph)](https://github.com/gratach/master-database-files/blob/d6a77955135191b52ad8ea4bbcaa3cd695bb3c32/master-experimental/populate_knowledge_graph_with_r30/ontology.ttl) 
 [Data (ontology)](https://github.com/gratach/master-experimental/blob/221410539c433d9d5e76f684c13c5caf7b225514/mlPhysOnto.ttl)

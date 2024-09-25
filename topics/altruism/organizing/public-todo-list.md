@@ -1,0 +1,3 @@
+# Public todo list
+
+When trying to collectively reach goals as a community it would be good to have some kind of public website that contains a todo list of tasks that have to be done. This could be a forum for everybody who wants to contribute to reach a goal. When someone decides that he wants to work on a specific task he could publish this information on the forum so people who want to join on this task could coordinate with him. When a task is finished it could be marked as done on the website and other tasks that were dependent on that task could then be tackled.

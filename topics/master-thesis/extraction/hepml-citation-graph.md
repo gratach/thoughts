@@ -6,19 +6,19 @@ The hepml citation graph consists of papers that where extracted from the [HEPML
 [Code (Inspirehep search)](https://github.com/gratach/master-thesis/blob/a5009d508233c47519090b0ef771ff2b3e7dbc35/semantic_paper/run.py) (commented out)
 ### General properties
 
-Total number of papers: 2429
-Database entries of papers with error: 57
-Total number of citations: 14730
-Papers from “HEP ML Living Review”: 856
-Papers from the Inspire search: 2266
-Intersection of both: 698
-Average references per paper: 6.2
-Two papers that are connected within the citation graph have an average distance of 3.6 citations
+Number of papers: 2409
+Number of citations: 14928
+Papers from “HEP ML Living Review”: 912
+Papers from the Inspire search: 2223
+Intersection of both: 726
+Average references per paper: 6.22
+Two papers that are connected within the citation graph have an average distance of 3.64 citations
+Papers that could not be included because of errors: 53
 
 ### Most cited papers within dataset
 
- 1) Jet-images - deep learning edition (171)
- 2) Jet substructure at the Large Hadron Collider: A review of recent    advances in theory and machine learning (137)
+ 1) Jet-images - deep learning edition (175)
+ 2) Jet substructure at the Large Hadron Collider: A review of recent    advances in theory and machine learning (140)
 3) Deep learning in color: towards automated quark/gluon jet discrimination (133)
 
 ### Papers citing most other papers within the dataset
@@ -29,7 +29,6 @@ Two papers that are connected within the citation graph have an average distance
 ### The dataset in JSON Format
 
 Converted the citation graph from the neo4j database into json format
-The database seems to be not exactly the same version as the version that was used for the evaluation above.
 
-[Code](https://github.com/gratach/master-experimental/blob/46b9ac4a21f213a4d9c7195b5759e352242c9ebe/neo4j_citing_data_conversion.ipynb)
-[Data](https://github.com/gratach/master-database-files/blob/d4ef97fe1f6fe5a4e50b307143ba962404859eb0/master-experimental/neo4j_citing_data_conversion/papers.json)
+[Code](https://github.com/gratach/master-experimental/blob/2eaafd9ceab3bc51526ca31211d39bc1091da15d/neo4j_citing_data_conversion.ipynb)
+[Data](https://github.com/gratach/master-database-files/blob/b83870acf803a3ab10fa36fb1525221d6d94159a/master-experimental/neo4j_citing_data_conversion/papers.json)
