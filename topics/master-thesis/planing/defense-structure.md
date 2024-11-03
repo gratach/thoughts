@@ -1,0 +1,27 @@
+# Defense structure
+
+- Introduction + Semantic networks (2)(1:21)
+- Subtopic trees (6)(11:11)
+	- What is a subtopic tree (0:30)
+	- Two algorithms to create them (2)
+	- Example visualization (1)
+	- Viewed bytes fraction metric (1:30)
+	- Comparing different models (1)
+- Network of semantic triples (5 min)
+	- Construction process and properties  (1:30)
+	- Metric to measure meaningfulness (1:30)t
+	- Manual evaluation of the triples (2)
+- Answering physical questions with semantic networks (5 min)
+	- Searching semantic network of semantic triples for answers (1:30)
+	- The decision cost metric (1:30)
+	- A semantic network of questions and answers (1)
+	- Testing the consistency of physics knowledge (1)
+- Creating a physics ontology (2 min)
+	- What is a ontology
+	- Generating a physics ontology + data
+- Extracting semantic network data from scientific texts (4 min)
+	- Sentences to semantic triples and back (2)
+	- Semantic networks of sentences (2)
+- Handling equations in semantic networks (5 min)
+	- Network of equations
+	- Derivations

@@ -29,7 +29,7 @@ The length of the master thesis should be ~60 pages
 		* [Subtopic tree evaluation methods](subtopic-tree-average-number-of-viewed-terms-per-search-evaluation.md)](../approaches/subtopic-tree-algorithms-description.md)
 		* [physics-term-adapted-subtopic-tree-evaluation](../evaluation/physics-term-adapted-subtopic-tree-evaluation.md)
 		* [physics-term-adapted-subtopic-tree-evaluation-free-association-algorithm](../evaluation/physics-term-adapted-subtopic-tree-evaluation-free-association-algorithm.md)
-		* [subtopic-tree-comparison](../evaluation/subtopic-tree-comparison.md)
+		* [subtopic-tree-comparison](../evaluation/subtopic-tree-comparison.md)  + [comparison-of-frAss-and-subd-for-different-parameters](../evaluation/comparison-of-frAss-and-subd-for-different-parameters.md)
 		* [subtopic-network-search-model-comparison](../evaluation/subtopic-network-search-model-comparison.md)
 * Representing physical knowledge as semantic triples
 	* Generating semantic triples of natural language (16 Pages)

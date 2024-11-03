@@ -7,6 +7,8 @@
 
 [Schnaq](https://schnaq.com/) Discussion software
 
+[Comet](https://comet.tech/) Software for x-ray scanning
+
 [Cybus](https://www.cybus.io/) Data infrastructures for factories
 [Aiomatic](https://www.ai-omatic.com/instandhaltungssoftware) Monitor health state of machines with AI
 

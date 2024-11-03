@@ -66,6 +66,6 @@ The generated relations are valid object properties that can be used to connect 
 ![](./images/generated_ontology.png)
 The next step is to [generate-knowledge-graph-based-on-an-ontology](generate-knowledge-graph-based-on-an-ontology.md)
 
-[Code (Generation)](https://github.com/gratach/master-experimental/blob/34c4cb27a76982c4047246000ea8f759adeae243/create_physics_ontology.ipynb)
+[Code (Generation)](https://github.com/gratach/master-experimental/blob/34c4cb27a76982c4047246000ea8f759adeae243/generated_ontology.ipynb)
 [Code (Visualization)](https://github.com/gratach/master-experimental/blob/34c4cb27a76982c4047246000ea8f759adeae243/visualize_ontology.ipynb)
 [Data](https://github.com/gratach/master-database-files/tree/3297b50af30258ec1a86080af3298d9dd4e701ef/master-experimental/generated_ontology/researchAreaSeeded)

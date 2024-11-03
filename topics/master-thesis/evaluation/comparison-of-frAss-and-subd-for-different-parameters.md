@@ -1,7 +1,11 @@
-# Comparison of frAss and subd for different parameters
+# Comparison of the `frAss` and `subd` algorithm for different values of the `maxChildNumber` parameter
 
-![](./images/subd_frass_comparison.svg)
-The viewed bytes fraction plotted against the average depth of the leaf nodes for different parameter settings of the subdivision algorithm (blue) and the free association algorithm (red). The y axis is shown with logarithmic scaling.
+| ![](./images/junction_nodes.svg) | ![](./images/average_depth_of_leaf_nodes.svg) | ![](./images/average_sub_junction_nodes_per_junction.svg) |
+| -------------------------------- | --------------------------------------------- | --------------------------------------------------------- |
+
+Different properties of the subtopic trees created by the free association algorithm and the subdivision algorithm in dependence of the `maxChildNumber`. The plotted properties are averaged over two subtopic trees created with the same parameter settings. The error bars are not shown because the low number of data points does not allow for a reliable error statistics for the different values of the `maxChildNumber` parameter. However, by comparing the pairs of subtopic trees created with the same parameter settings the rough estimation can be made that the error is in all cases smaller than 10%.
+![](./images/subd_frass_comparison_2.svg)
+The [viewed bytes fraction](../equations/subtopic-tree-average-number-of-viewed-terms-per-search-evaluation.md) plotted against the average depth of the leaf nodes for different values of the ```maxChildNumber``` parameter of the subdivision algorithm (blue) and the free association algorithm (red). The y axis is shown with logarithmic scaling.
 
 
 | Tree    | Average term depth | Average number of sub-junction-nodes per junction node with sub-junction-nodes | Average viewed nodes fraction | Average viewed bytes fraction | Average choice correctness percentage |
@@ -17,5 +21,5 @@ The viewed bytes fraction plotted against the average depth of the leaf nodes fo
 
 This is a more systematic comparison of both algorithms then the previous evaluation of the [subdivision algorithm](physics-term-adapted-subtopic-tree-evaluation.md) and the [free association algorithm](physics-term-adapted-subtopic-tree-evaluation-free-association-algorithm.md).
 
-[Code](https://github.com/gratach/master-experimental/blob/88cf9e8b0a2199432e67d25f51bcef9419164e13/subtopic_tree_comparison.ipynb)
-[Data](https://github.com/gratach/master-database-files/tree/cc4aeabad3fa67978c5391b0a46281985d8a5b2d/master-experimental/subtopic_tree_comparison) [Data-2](https://github.com/gratach/master-database-files/tree/cc4aeabad3fa67978c5391b0a46281985d8a5b2d/master-adapted-subtopic-tree-generation/trees)
+[Code](https://github.com/gratach/master-experimental/blob/7967cbac1171a88caaab8ae69fc8fa816633a9d3/subtopic_tree_comparison.ipynb)
+[Data](https://github.com/gratach/master-database-files/tree/3f42e8dee9615a918494a7ce40c589b833473dcf/master-experimental/subtopic_tree_comparison) [Data-2](https://github.com/gratach/master-database-files/tree/cc4aeabad3fa67978c5391b0a46281985d8a5b2d/master-adapted-subtopic-tree-generation/trees)

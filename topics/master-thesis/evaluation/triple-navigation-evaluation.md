@@ -8,7 +8,7 @@ Here is an example for a successful triple search of the ```gpt-4-turbo``` model
 
 | Iteration | Triple                                                                    | Topic                  |
 | --------- | ------------------------------------------------------------------------- | ---------------------- |
-| 0         | `["Physics", "is a branch of", "Science"]`                                | Physics                |
+| 0         | `[5]`                                                                     | Physics                |
 | 1         | `["Magnetism", "is studied as a branch of", "Science"]`                   | Electromagnetism       |
 | 2         | `["Magnetism", "is a key component of", "Electromagnetism"]`              | Electromagnetism       |
 | 3         | `["Dynamo theory", "explains creation of", "Electromagnetism"]`           | Magnetic fields        |
