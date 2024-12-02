@@ -20,6 +20,7 @@ Press enter to use default values and confirm with yes
 (Optional) Enable ssh key for webuser
 ```
 su -c "mkdir -p ~/.ssh" webuser
+chmod 700 /home/webuser/.ssh
 cp ~/.ssh/authorized_keys /home/webuser/.ssh/authorized_keys
 chown webuser:webuser /home/webuser/.ssh/authorized_keys
 ```
@@ -55,7 +56,7 @@ apt install nginx
 Add the config file "server" to the directory /etc/nginx/sites-enabled/
 
 ```
-cat > /etc/nginx/sites-enabled/server << EOF
+cat > /etc/nginx/sites-enabled/server << 'EOF'
 
 ```
 
@@ -63,25 +64,43 @@ This is the file content
 
 ```
 server {
-       listen 80;
-       listen [::]:80;
-
-#       server_name example.com;
-
-       root /home/webuser/pa-trickrichter-website/www;
-       index index.html;
-
-       location / {
-               try_files $uri $uri/ =404;
-       }
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    return 301 https://$host$request_uri;
 }
 
+server {
+	listen 443 ssl;
+	listen [::]:443 ssl;
+	server_name trickrichter.de;
+	ssl_certificate /etc/letsencrypt/live/trickrichter.de/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/trickrichter.de/privkey.pem;
+	return 301 https://pa.trickrichter.de$request_uri;
+}
+
+server{
+	listen 443 ssl;
+	listen [::]:443 ssl;
+	
+	server_name pa.trickrichter.de;
+	ssl_certificate /etc/letsencrypt/live/trickrichter.de/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/trickrichter.de/privkey.pem;
+
+	root /home/webuser/pa-trickrichter-website/www;
+	index index.html index.htm index.nginx-debian.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
 
 ```
 End the file
 ```
 EOF
 ```
+
 ### Configure DNS Records
 
 First the domain has to be registered (only necessary if not only done)
@@ -106,7 +125,14 @@ For the server the following DNS records were configured
 | trickrichter.de | AAAA | www  | `<server IPv6 address>` |
 | trickrichter.de | AAAA | mail | `<server IPv6 address>` |
 
+### Configure HTTPS
 
+```
+apt install certbot
+apt install python3-certbot-nginx
+certbot register
+certbot certonly -n --nginx -d trickrichter.de -d pa.trickrichter.de
+```
 
 
 
