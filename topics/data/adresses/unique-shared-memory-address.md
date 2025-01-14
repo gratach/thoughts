@@ -8,6 +8,7 @@ The format of an USMA address is that of an [byte-tree-address](byte-tree-addres
 
 Use cases of a USMA could be a [decentralized package manager](../../code/ideas/decentralized-package-manager.md) and a decentralized knowledge graph.
 
-An attempt to implement an decentralized USMA managing system is the [[distrida]] project.
+An attempt to implement an decentralized USMA managing system is the [distrida](../../code/projects/distrida.md) project.
+An alternative attempt to create an international decentralized address space is the [dunin project](../../graph/organizing/dwll-url-node-identification-namespace.md)
 
 

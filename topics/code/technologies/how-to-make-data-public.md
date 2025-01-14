@@ -12,7 +12,11 @@ They can also be made public on the [interplanetary-file-system](../../data/thir
 
 #### Use Github as public storage for data
 
-
+[Github](github.com) can be used to host git repositories that contain public data.
 #### Use Zenodo
 
 [Zenodo](https://zenodo.org/) is a open science project from [CERN](https://home.cern/) which offers a 
+
+#### Use the dunin system
+
+One proposed solution is to use the [dunin system](../../graph/organizing/dwll-url-node-identification-namespace.md). This is not yet implemented.

@@ -13,3 +13,6 @@ Each **SimpleCommunityDatabaseClient** class implements the following functions:
 The **DataEnumerator** object provides the following function:
 
 * **getNextData():** Returns ether the data of the next client of the network that provides it for the given address or none if there are no more clients which store data under the given address
+
+
+One possible application of this database is the task of [locating dunin nodes](../questions/how-to-locate-dunin-nodes.md).
