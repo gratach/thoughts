@@ -1,6 +1,7 @@
 # Main server setup instruction
 
-This is a detailed instruction on how I did the setup of my server
+This is a detailed instruction on how I did the setup of my server.
+If you find any security flaws in this configuration please do not exploit them but notify me so I can fix them (patrick-richter(at)posteo.de).
 ### Create a server
 
 Create an account on [Hetzner](hetzner.com)
@@ -289,12 +290,12 @@ certbot certonly -n --nginx -d trickrichter.de -d pa.trickrichter.de -d linchat.
 certbot certonly -n --nginx  --staple-ocsp --force-renewal -d server.trickrichter.de
 ```
 
-Set automatic certificate renewals
+Set automatic certificate renewals with cron (use this syntax to avoid [bug](../bugs/etc-crontab-syntax-bug.md))
 
 ```
 cat >> /etc/crontab << EOF
 # Lets encrypt certificate renewal
-11 22 * * 3 root certbot renew -n --nginx &>/dev/null
+11 22 * * 3 root certbot renew -n --nginx >> /dev/null 2>&1
 EOF
 ```
 
@@ -313,6 +314,18 @@ apt install postfix
 ```
 Select postfix configuration "Internet site"
 Select `trickrichter.de`  as the system mail name
+
+Set a maximum mailbox size by editing the line starting with `mailbox_size_limit =` in the file `/etc/postfix/main.cf` and change it into:
+
+```
+mailbox_size_limit = 30000000
+```
+
+Restart the mail server
+
+```
+postfix reload
+```
 ### Create p user
 
 Create a new user to recieve the mail traffic

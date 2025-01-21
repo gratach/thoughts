@@ -4,8 +4,8 @@
 
 
 What projects could be part of effective altruism?:
-* [[public-todo-list]]
-* [[democratic-software-development-project]]
+* [public-todo-list](../organizing/public-todo-list.md)
+* [democratic-software-development-project](../democracy/democratic-software-development-project.md)
 
 
 
