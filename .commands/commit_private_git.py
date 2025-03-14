@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from pathlib import Path
 import os
 from shlex import quote
@@ -36,6 +38,7 @@ for content in rootPath.iterdir():
 
 # Move the private_git files to the temp folder
 move(str(privateGitPath), str(tempPath / ".git"))
+copy(str(privateGitDirPath / "gitignore.txt"), str(tempPath / ".gitignore"))
 
 # Commit the changes
 os.system(f"cd {quote(str(tempPath))} && git add . && git commit -m {quote(commitMessage)}")

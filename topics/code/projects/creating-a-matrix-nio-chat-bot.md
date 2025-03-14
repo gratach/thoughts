@@ -21,4 +21,6 @@ When creating new chat bots that implement end to end encryption for a existing 
 
 Verification can be achieved by 
 
-See also [matrix-nio-device-verification-bug](../bugs/matrix-nio-device-verification-bug.md)
+See also the following bugs:
+[matrix-nio-device-verification-bug](../bugs/matrix-nio-device-verification-bug.md)
+[matrix-nio-no-such-room-with-id](../bugs/matrix-nio-no-such-room-with-id.md)

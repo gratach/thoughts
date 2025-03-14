@@ -6,3 +6,5 @@ Such a platform could also include a [public-todo-list](public-todo-list.md) tha
 An outdated example of a public project collection is the [Ourproject](https://ourproject.org/) web page. This web page makes it possible to commit new projects.
 
 A more static collection of open projects is [Libreproject](https://libreprojects.net)
+
+Projects that can be funded [opencollective](https://opencollective.com/).

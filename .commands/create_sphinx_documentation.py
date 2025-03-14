@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Creates a Sphinx documentation at the path .commands/sphinx/output
 
 import os

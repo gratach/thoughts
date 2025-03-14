@@ -1,0 +1,5 @@
+# How to handle altered versions of dunin nodes
+
+[Dunin nodes](../../graph/organizing/dunin-node.md) are peaces of data (bytes content, and links) that are globally referenced by [dunin IDs](dunin-id.md). The rules that allow [dunin agents](../../code/architecture/dunin-agent.md) to assign the data content to a newly created dunin node state that once created a dunin ID is always referencing the same data. If these rules are followed correctly there is always exactly one valid version of a dunin node.
+
+However in a decentralized real world scenario there is no way to enforce that all parties are always enforcing this rules. There could be malicious dunin agents within the network of dunin agents that redistribute altered versions of a dunin or define dunin nodes multiple times because of software errors.

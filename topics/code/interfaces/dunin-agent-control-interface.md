@@ -4,7 +4,7 @@ This is a list of functions that should be implemented by an interface that can 
 
 **createNewNode** (content, links) -> internalDuninID
 
-Creates a new dunin node that is identified by a new internal and an external dunin id. Uses the given content and links to create the node. Returns the internal dunin ID.
+Creates a new dunin node that is identified by a new internal and an [external dunin ID](../../data/adresses/dunin-id.md). Uses the given content and links to create the node. Returns the [internal dunin ID](../../data/adresses/internal-dunin-id.md).
 
 **reserveNewNode** () -> externalDuninID
 

@@ -5,7 +5,8 @@
 ## Matrix client applications
 
 A popular matrix client is [Element](https://element.io/)
-It can be used online with [this](https://app.element.io) url
+It can be used online with [this](https://app.element.io) url in the browser
+When installed on the pc multiple matrix accounts can be used at the same time when opening a second element window with the command `element-desktop --profile <the second matrix id>'
 
 ## Programming python bots with python-nio
 
