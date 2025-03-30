@@ -22,6 +22,7 @@ Human readable:
 ```
 ls -A | xargs -I {} du -sh {} | sort -rh
 ```
+This command is available under the shortcut `ls-s`if the pc is configured like described in [debian-i3-pc-setup](debian-i3-pc-setup.md)
 See also:
 [How to sort by size](https://unix.stackexchange.com/questions/106330/sort-all-directories-based-on-their-size)
 [How to include hidden and special files and directories](https://superuser.com/questions/342448/du-command-does-not-parse-hidden-directories)

@@ -82,7 +82,7 @@ The options available to choose from should be adapted to the post type of the c
 
 ### Options menu
 
-When you right-click (or hold down) on relations and text articles, an options menu should be displayed, which you can use to make changes. It should be possible to delete relations and text contributions and change their classification.
+When you right-click (or hold down) on relations and text nodes, an options menu should be displayed, which you can use to make changes. It should be possible to delete relations and text contributions and change their classification.
 
 You should also be able to use this menu to create new relationships between existing text contributions.
 

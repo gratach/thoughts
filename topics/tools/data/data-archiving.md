@@ -12,3 +12,9 @@ Extract the content of `myzipfile.zip` into `mydirectory`
 ```bash
 unzip myzipfile.zip -d mydirectory
 ```
+
+List all the files in the directory `mydirectory`
+
+```bash
+find mydirectory -type f
+```

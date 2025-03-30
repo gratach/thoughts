@@ -1,3 +1,5 @@
 # Public todo list
 
 When trying to [collectively reach a goal as a community](commons-based-peer-production.md) it would be good to have some kind of public website that contains a todo list of tasks that have to be done to reach that goal. This could be a forum for everybody who wants to contribute to reach the specific goal. When someone decides that he wants to work on a specific task he could publish this information on the forum so people who want to join on this task could coordinate with him. When a task is finished it could be marked as done on the website and other tasks that were dependent on that task could then be tackled. This tool could be integrated in a forum that [collects different public projects](public-project-collection).
+
+Here is a [research for existing software for public project planing](public-project-organization-existing-software-research.md)
