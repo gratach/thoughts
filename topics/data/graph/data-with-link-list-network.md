@@ -1,6 +1,8 @@
 # Data with link list network
 
-The **dwll** (data with link list) network is a type of a semantic network in which each node has a block of byte data assigned to it and also a ordered list of directed edges pointing from the node to other nodes. Some of the nodes represent data formats. The first directed edge in the edges list of each node points always to the target node that represents the data format of the original node. 
+The **dwll** (data with link list) network is a type of a semantic network in which each node has a block of byte data assigned to it and also a ordered list of directed edges pointing from the node to other nodes. The directed edges in the list that link two nodes do not have to be symmetric. For example it is possible that node A contains a link to node B at the first index of its list but node B does not contain any links to node A in its list.
+
+Some of the nodes represent data formats. The first directed edge in the edges list of each node points always to the target node that represents the data format of the original node. 
 
 In order to interpret the meaning of the byte data and the ordered edges list of each node one has to know how the data formats of the nodes representing data formats are defined. This is not defined by the **dwll** format itself.
 
@@ -66,4 +68,10 @@ This example has the following properties:
 * The node 6 contains data in the int format because its first and only edge in the list points to node 2
 * The node 8 contains data in the sentence format because its first edge in the list points to node 3
 * The other edges in the list of node 8 point to the different components of the sentences. Together they can be read as "Here are 4 words"
+
+### Extension
+
+A extended version of this network in which multiple versions of nodes with the same ID can exist is the [data-with-link-list-version-extension-network](data-with-link-list-version-extension-network.md)
+
+
 

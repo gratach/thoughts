@@ -13,3 +13,7 @@ When installed on the pc multiple matrix accounts can be used at the same time w
 [creating-a-matrix-nio-chat-bot](../projects/creating-a-matrix-nio-chat-bot.md)
 [old documentation](https://matrix.org/docs/older/python-nio/)
 [new documentation](https://matrix-nio.readthedocs.io/en/latest/)
+
+## Bridges
+
+Create bridge to irc channel on irc.debian.org [as described here](https://wiki.debian.org/IRC/ElementMatrix)

@@ -121,3 +121,36 @@ fi
 ```
 EOF
 ```
+
+## Configure the .config/i3/config file
+
+Add the following content to the file `~/.config/i3/config`
+```
+cat >> ~/.config/i3/config << 'EOF'
+```
+
+```
+# custom
+
+exec --no-startup-id udiskie &
+exec --no-startup-id xset b off 
+
+# Brightness control
+bindsym XF86MonBrightnessUp exec "/home/gratach/.config/i3/hell"
+bindsym XF86MonBrightnessDown exec "/home/gratach/.config/i3/dunkel"
+
+# Screenshots
+bindsym Print exec --no-startup-id "gnome-screenshot"
+bindsym Shift+Print exec --no-startup-id "shutter -s -e"
+
+# Move workspaces between monitors
+bindsym $mod+Shift+period move workspace to output right
+bindsym $mod+Shift+comma move workspace to output left
+
+# Add and remove second monitor
+bindsym $mod+period exec "xrandr --output HDMI-2 --auto --right-of eDP-1"
+bindsym $mod+comma exec "xrandr --auto"
+```
+```
+EOF
+```

@@ -107,3 +107,7 @@ Language: English
 
 
 ```
+
+### Version extension
+
+An extended version of this file format that allows to store  [dwllve network data](data-with-link-list-version-extension-network.md) is the [dwllver file format](data-with-linked-list-version-extension-row-file.md).
