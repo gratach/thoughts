@@ -31,7 +31,31 @@ for content in rootPath.iterdir():
 
 # Copy the build files to the temp folder
 for content in buildFilesPath.iterdir():
-     copy(str(content), str(tempPath / content.name))
+     if content.is_dir():
+         copytree(str(content), str(tempPath / content.name))
+     else:
+        copy(str(content), str(tempPath / content.name))
+
+# Create an table of content tree
+def makeTocTreeRecursive(path, name):
+    directoryContent = [x for x in path.iterdir()]
+    directoryContent.sort(key=lambda x: ("0" if x.is_file() else "1") + x.name.lower())
+    content_names = []
+    for content in directoryContent:
+        if content.is_dir():
+            makeTocTreeRecursive(content, content.name)
+            content_names.append(content.name + "/index")
+        elif content.is_file() and content.suffix == ".md":
+            content_names.append(content.name)
+    with (path / "index.rst").open("w") as f:
+        f.write(name + "\n")
+        f.write("=" * len(name) + "\n")
+        f.write("\n\n")
+        f.write(".. toctree::\n    :maxdepth: 2\n    :caption: Contents:\n    \n")
+        for name in content_names:
+            f.write("    " + name + "\n")
+makeTocTreeRecursive(tempPath, "index")
+
 
 # Run the sphinx build command
 os.system(f"sphinx-build {tempPath} {outputPath}")
