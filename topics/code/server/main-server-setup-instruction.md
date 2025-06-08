@@ -130,6 +130,15 @@ npm run build
 rsync -a --delete dist/ $MYSERVERNAME:/var/www/spiralife-website
 cd ../..
 ```
+
+##### Prepare the thoughts website
+
+```
+git clone --depth 1 https://github.com/gratach/thoughts
+python3 thoughts/.commands/create_sphinx_documentation.py
+rsync -a --delete thoughts/.commands/output/ $MYSERVERNAME:/var/www/thoughts
+```
+
 ##### Prepare the linchat website
 ```
 git clone --depth 1 https://github.com/gratach/linchat
@@ -261,6 +270,21 @@ server{
 	listen 443 ssl;
 	listen [::]:443 ssl;
 	
+	server_name thoughts.debablo.de;
+	ssl_certificate /etc/letsencrypt/live/debablo.de/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/debablo.de/privkey.pem;
+
+	root /var/www/thoughts/;
+	index index.html index.htm;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
+server{
+	listen 443 ssl;
+	listen [::]:443 ssl;
+	
 	server_name linchat.trickrichter.de;
 	ssl_certificate /etc/letsencrypt/live/trickrichter.de/fullchain.pem;
 	ssl_certificate_key /etc/letsencrypt/live/trickrichter.de/privkey.pem;
@@ -319,9 +343,11 @@ For the server the following DNS records were configured
 | debablo.de      | A    | @         | `<server IPv4 address>` |
 | debablo.de      | A    | www       | `<server IPv4 address>` |
 | debablo.de      | A    | spiralife | `<server IPv4 address>` |
+| debablo.de      | A    | thoughts  | `<server IPv4 address>` |
 | debablo.de      | AAAA | @         | `<server IPv4 address>` |
 | debablo.de      | AAAA | www       | `<server IPv4 address>` |
 | debablo.de      | AAAA | spiralife | `<server IPv4 address>` |
+| debablo.de      | AAAA | thoughts  | `<server IPv4 address>` |
 ### Configure the revers DNS records
 Navigate to [Hetzner->Cloud->Projects](https://console.hetzner.cloud/projects)
 Navigate to the server + click on it
@@ -340,7 +366,7 @@ apt install certbot
 apt install python3-certbot-nginx
 certbot register
 certbot certonly -n --nginx -d trickrichter.de -d pa.trickrichter.de -d linchat.trickrichter.de
-certbot certonly -n --nginx -d debablo.de -d www.debablo.de -d spiralife.debablo.de
+certbot certonly -n --nginx -d debablo.de -d www.debablo.de -d spiralife.debablo.de -d thoughts.debablo.de
 certbot certonly -n --nginx  --staple-ocsp --force-renewal -d server.trickrichter.de
 ```
 

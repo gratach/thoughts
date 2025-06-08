@@ -20,3 +20,7 @@ They can also be made public on the [interplanetary-file-system](../../data/thir
 #### Use the dunin system
 
 One proposed solution is to use the [dunin system](../../graph/organizing/dwll-url-node-identification-namespace.md). This is not yet implemented.
+
+#### See also
+
+[ways-of-publishing-a-markdown-knowledge-base](../../data/open-data/ways-of-publishing-a-markdown-knowledge-base.md)

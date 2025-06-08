@@ -17,5 +17,4 @@ html_sidebars = {
    '**': ['globaltoc.html']
 }
 
-
 source_suffix = ['.rst', '.md']
