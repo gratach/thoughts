@@ -8,4 +8,3 @@ Please open the markdown files linked in the list below one by one and execute t
 
 ## Proposed tasks:
 
-[extract-tasks-from-list](../tasks/organizing/knowledge-base/extract-tasks-from-list.md)
