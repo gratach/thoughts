@@ -10,3 +10,4 @@ Goal ID: #goal7
 ### Subordinate Goals
 - [Bring individuals with different opinions in contact with each other and let them discuss their world view](connect-individuals-with-different-opinions.md)
 - [Educate yourself](educate-yourself.md)
+- [honesty-in-the-presentation-of-things](../data/honesty-in-the-presentation-of-things.md)

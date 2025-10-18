@@ -8,4 +8,4 @@ Goal ID: #goal10
 - [Increase the education of individuals](increase-education.md)
 
 ### Subordinate Goals
-None.
+[having-an-open-platform-for-collective-thinking](../thinking/having-an-open-platform-for-collective-thinking.md)

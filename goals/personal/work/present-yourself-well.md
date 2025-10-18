@@ -6,6 +6,7 @@ Goal ID: #goal17
 
 ### Overarching Goals
 - [Earn money](earn-money.md)
+- [recognition-for-achievements](recognition-for-achievements.md)
 
-### Subordinate Goals
-None.
+## Conflicting Goals
+[honesty-in-the-presentation-of-things](../../knowledge/data/honesty-in-the-presentation-of-things.md)

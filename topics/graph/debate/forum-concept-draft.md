@@ -187,3 +187,7 @@ The implementation of the project described above is a very extensive project. A
 ### Work already done
 
 To achieve this goal, a Javascript demo was developed to test navigation through the semantic network: [https://debablo.de/demo](https://debablo.de/demo)
+
+### See also
+
+[open-forum-for-collective-thinking](../../data/knowledge/open-forum-for-collective-thinking.md)

@@ -20,5 +20,5 @@ change line `PermitRootLogin prohibit-password`into `PermitRootLogin yes`
 
 Restart ssh with: `systemctl restart ssh`
 
-The ssh key can now be configured by the client
+The ssh key [can now be configured](../server/configure-ssh-key-for-server.md) by the client
 

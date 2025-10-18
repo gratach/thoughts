@@ -131,6 +131,21 @@ rsync -a --delete dist/ $MYSERVERNAME:/var/www/spiralife-website
 cd ../..
 ```
 
+##### Prepare the quantsimulant website
+```
+# Install emskripten
+git clone https://github.com/emscripten-core/emsdk.git
+cd emsdk
+./emsdk install latest
+./emsdk activate latest
+source ./emsdk_env.sh
+cd ..
+# Prepare quantsimulant website
+git clone --depth 1 https://github.com/gratach/quantsimulant.git
+git clone --depth 1 https://github.com/gratach/quantsimulant-website.git
+python3 quantsimulant-website/create_website.py
+rsync -a --delete quantsimulant-website/dist/ $MYSERVERNAME:/var/www/quantsimulant
+```
 ##### Prepare the thoughts website
 
 ```
@@ -285,6 +300,21 @@ server{
 	listen 443 ssl;
 	listen [::]:443 ssl;
 	
+	server_name quantsimulant.debablo.de;
+	ssl_certificate /etc/letsencrypt/live/debablo.de/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/debablo.de/privkey.pem;
+
+	root /var/www/quantsimulant/;
+	index index.html index.htm;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
+server{
+	listen 443 ssl;
+	listen [::]:443 ssl;
+	
 	server_name linchat.trickrichter.de;
 	ssl_certificate /etc/letsencrypt/live/trickrichter.de/fullchain.pem;
 	ssl_certificate_key /etc/letsencrypt/live/trickrichter.de/privkey.pem;
@@ -327,27 +357,33 @@ Add or change the records
 
 For the server the following DNS records were configured
 
-| Domain          | Type | Name      | Value                   |
-| --------------- | ---- | --------- | ----------------------- |
-| trickrichter.de | A    | @         | `<server IPv4 address>` |
-| trickrichter.de | A    | pa        | `<server IPv4 address>` |
-| trickrichter.de | A    | www       | `<server IPv4 address>` |
-| trickrichter.de | A    | server    | `<server IPv4 address>` |
-| trickrichter.de | A    | linchat   | `<server IPv4 address>` |
-| trickrichter.de | AAAA | @         | `<server IPv6 address>` |
-| trickrichter.de | AAAA | pa        | `<server IPv6 address>` |
-| trickrichter.de | AAAA | www       | `<server IPv6 address>` |
-| trickrichter.de | AAAA | server    | `<server IPv6 address>` |
-| trickrichter.de | AAAA | linchat   | `<server IPv6 address>` |
-| trickrichter.de | MX   | @         | server                  |
-| debablo.de      | A    | @         | `<server IPv4 address>` |
-| debablo.de      | A    | www       | `<server IPv4 address>` |
-| debablo.de      | A    | spiralife | `<server IPv4 address>` |
-| debablo.de      | A    | thoughts  | `<server IPv4 address>` |
-| debablo.de      | AAAA | @         | `<server IPv4 address>` |
-| debablo.de      | AAAA | www       | `<server IPv4 address>` |
-| debablo.de      | AAAA | spiralife | `<server IPv4 address>` |
-| debablo.de      | AAAA | thoughts  | `<server IPv4 address>` |
+| Domain           | Type | Name          | Value                   |
+| ---------------- | ---- | ------------- | ----------------------- |
+| trickrichter.de  | A    | @             | `<server IPv4 address>` |
+| trickrichter.de  | A    | pa            | `<server IPv4 address>` |
+| trickrichter.de  | A    | www           | `<server IPv4 address>` |
+| trickrichter.de  | A    | server        | `<server IPv4 address>` |
+| trickrichter.de  | A    | linchat       | `<server IPv4 address>` |
+| trickrichter.de  | AAAA | @             | `<server IPv6 address>` |
+| trickrichter.de  | AAAA | pa            | `<server IPv6 address>` |
+| trickrichter.de  | AAAA | www           | `<server IPv6 address>` |
+| trickrichter.de  | AAAA | server        | `<server IPv6 address>` |
+| trickrichter.de  | AAAA | linchat       | `<server IPv6 address>` |
+| trickrichter.de  | MX   | @             | server                  |
+| debablo.de       | A    | @             | `<server IPv4 address>` |
+| debablo.de       | A    | www           | `<server IPv4 address>` |
+| debablo.de       | A    | spiralife     | `<server IPv4 address>` |
+| debablo.de       | A    | thoughts      | `<server IPv4 address>` |
+| debablo.de       | A    | quantsimulant | `<server IPv4 address>` |
+| debablo.de       | AAAA | @             | `<server IPv6 address>` |
+| debablo.de       | AAAA | www           | `<server IPv6 address>` |
+| debablo.de       | AAAA | spiralife     | `<server IPv6 address>` |
+| debablo.de       | AAAA | thoughts      | `<server IPv6 address>` |
+| debablo.de       | AAAA | quantsimulant |                         |
+| quantsimulant.de | A    | @             | `<server IPv4 address>` |
+| quantsimulant.de | A    | www           | `<server IPv4 address>` |
+| quantsimulant.de | AAAA | @             | `<server IPv6 address>` |
+| quantsimulant.de | AAAA | www           | `<server IPv6 address>` |
 ### Configure the revers DNS records
 Navigate to [Hetzner->Cloud->Projects](https://console.hetzner.cloud/projects)
 Navigate to the server + click on it
@@ -366,7 +402,7 @@ apt install certbot
 apt install python3-certbot-nginx
 certbot register
 certbot certonly -n --nginx -d trickrichter.de -d pa.trickrichter.de -d linchat.trickrichter.de
-certbot certonly -n --nginx -d debablo.de -d www.debablo.de -d spiralife.debablo.de -d thoughts.debablo.de
+certbot certonly -n --nginx -d debablo.de -d www.debablo.de -d spiralife.debablo.de -d thoughts.debablo.de -d quantsimulant.debablo.de
 certbot certonly -n --nginx  --staple-ocsp --force-renewal -d server.trickrichter.de
 ```
 

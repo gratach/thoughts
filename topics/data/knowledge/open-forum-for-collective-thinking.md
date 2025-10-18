@@ -1,0 +1,7 @@
+# Open forum for collective thinking
+
+An open forum for collective thinking aims to create a digital entity with the capability to answer questions, build up a knowledge base and aim for goals which is driven by the cooperation of many individuals who create and maintain parts of a big interconnected data structure that represents the inner state of the digital mind. In contrast to state of the art large language models which are a black box to normal people this approach should make it possible to get insights into the processes which drive the digital mind and actively contribute to them. The data that gets created should be open and accessible to everyone.
+
+[Having such an open platform for collective thinking](../../../goals/knowledge/thinking/having-an-open-platform-for-collective-thinking.md) might contribute to the active participation of individuals to bigger projects and might encourage people to work together on solving problems that affect everyone in a way that is the best for the community. It also might support the effort to sort their thoughts in a way that complicated questions can be tackled.
+
+[This concept draft](../../graph/debate/forum-concept-draft.md) proposes how the general design of such a forum could look like.

@@ -4,6 +4,8 @@
 dpkg-reconfigure keyboard-configuration
 ```
 
+The `-`character can be typed by using the German `ß` key. `z` and `y` are swapped.
+
 Select default keyboard model (generic 105 key pc)
 Select language German
 Select default options

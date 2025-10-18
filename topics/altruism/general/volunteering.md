@@ -1,9 +1,14 @@
 # Volunteering
 
+## Inspirations
+
+[How You Can Make a Difference](https://www.smarter.com/people/exploring-non-profit-volunteer-opportunities-can-make-difference)
+
 ## Collection of sources for volunteering projects
 
 [Aktion mensch](https://www.aktion-mensch.de/)
 [Freiwillig Hamburg](https://www.freiwillig.hamburg/ehrenamt-in-hamburg-finden-freiwillig-ehrenamtlich-engagiert.html)
+[Volunteermatch](https://www.volunteermatch.org)
 
 ## Selected projects
 

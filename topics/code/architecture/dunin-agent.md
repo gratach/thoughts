@@ -6,5 +6,6 @@ Example of a dunin agent locator:
 `http://my.domain.com/dunin/agent/locator//`
 
 A dunin agent can be controlled via an [dunin-agent-control-interface](../interfaces/dunin-agent-control-interface.md).
-Dunin agents handle [dunin IDs](../../data/adresses/dunin-id.md) according to the [[rules-for-using-dunin-ids]].
+It can store data in a [dunin-db](../../data/database-software/dunin-db.md)
+Dunin agents handle [dunin IDs](../../data/adresses/dunin-id.md) according to the [rules-for-using-dunin-ids](../../data/adresses/rules-for-using-dunin-ids.md).
 A possible realization of an dunin agent is the [[http-dunin-agent]].

@@ -14,6 +14,7 @@ The knowledge base is also designed to be used with Obsidian, which can be parti
 ```[meinlink](meinlink)``` 
 So markdown style links have to be used 
 ```[Link name](./relative/adress)```
+The links can be converted in Obsidian using the [link converter plugin](https://github.com/ozntel/obsidian-link-converter).
 
 **See also**
 [ways-of-publishing-a-markdown-knowledge-base](../open-data/ways-of-publishing-a-markdown-knowledge-base.md)

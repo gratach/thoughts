@@ -1,0 +1,3 @@
+# Dunin network
+
+The [dunin](../../graph/organizing/dwll-url-node-identification-namespace.md) network is an approach to create a [decentralized-consistent-data-network](decentralized-consistent-data-network.md) that is [currently in planning](../../../tasks/planning/data/plan-dunin-network.md). It consists of [dunin nodes](../../graph/organizing/dunin-node.md) that are created and maintained by [dunin agents](../../code/architecture/dunin-agent.md). 
