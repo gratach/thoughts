@@ -5,7 +5,7 @@ Create system to document work process on computer across multiple applications
 pending
 
 # Overarching Goals
-- [make-data-available-to-public](../planning/goals/make-data-available-to-public.md)
+- [make-data-available-to-public](../../../goals/knowledge/data/make-data-available-to-public.md)
 
 # Overarching Tasks
 

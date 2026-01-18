@@ -1,6 +1,6 @@
 # Palantir
 
-Palantir ([www.palantir.com](www.palantir.com)) is a data analytics company that uses ontologies to organize big amounts of data and make it accessible to paying customers.
+Palantir ([www.palantir.com](https://www.palantir.com)) is a data analytics company that uses ontologies to organize big amounts of data and make it accessible to paying customers.
 
 
 [Baden-Württemberg contract with Palantir](https://web.archive.org/web/20250708204347/https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-thiel-software-fuer-bw-polizei-konflikt-um-palantir-vertrag-geht-weiter-100.html)

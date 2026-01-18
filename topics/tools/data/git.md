@@ -55,12 +55,29 @@ remote
 git push -d remote_name branch_name
 ```
 
+#### Undo git add
+
+```bash
+git reset
+```
+
 #### Discard local changes
 
 ```bash
 git reset --hard HEAD
 ```
+
+#### Get url of remote
+
+```bash
+git remote get-url name_of_remote_probably_origin 
+```
+#### Set url of remote
+
+```bash
+git remote set-url name_of_remote_probably_origin name_of_the_url
+```
+
 #### Shortcuts
 
 Some of the git commands are also defined as shortcuts in the [bashrc config of the debian-i3-pc-setup](../linux/debian-i3-pc-setup.md)
-

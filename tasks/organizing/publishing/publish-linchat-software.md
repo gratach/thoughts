@@ -5,4 +5,4 @@ Publish and port the linchat software
 pending
 
 ## Overarching Goals
-- [[make-data-available-to-public]([make-data-available-to-public)
+- [make-data-available-to-public](../../../goals/knowledge/data/make-data-available-to-public.md)

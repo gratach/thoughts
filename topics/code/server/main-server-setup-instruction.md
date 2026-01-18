@@ -4,7 +4,7 @@ This is a detailed instruction on how I did the setup of my server.
 If you find any security flaws in this configuration please do not exploit them but notify me so I can fix them (patrick-richter(at)posteo.de).
 ### Create a server
 
-Create an account on [Hetzner](hetzner.com)
+Create an account on [Hetzner](https://hetzner.com)
 Navigate to Hetzner Cloud
 Create a new Server or [Rebuild an existing Server](../bugs/rebuilding-the-hetzner-server.md) with the Debian 12 image
 

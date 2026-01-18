@@ -19,7 +19,16 @@ The venv can be left by using the command
 deactivate
 ```
 
+## Installing a python package editable
 
+If you want to make changes in the source code of the python package while it is installed in the venv you can add the `-e` option.
 
+```
+pip istall -e nameOfThePythonPackage
+```
+
+## See also
+
+[pip](../python/pip.md)
 [select-venv-in-vscode](../../tools/editor/select-venv-in-vscode.md)
 [ipython notebook with venv bug](../bugs/ipython-notebook-with-venv.md)

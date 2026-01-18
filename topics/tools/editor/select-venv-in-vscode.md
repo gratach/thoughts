@@ -3,12 +3,11 @@
 To select a [venv](../../code/technologies/venv.md) virtual environment that can run your python code type:
 ```STR + SHIFT + P```
 Enter
-```Select Python Interpreter```
-Scroll down and select 
-`Select at workspace level`
+```Python: Select Interpreter```
+Scroll down and choose the project for that you want to configure the venv
 Select
 `Enter interpreter path`
-Chose the path `bin/python3` relative to the venv directory
+Chose the path `bin/python3` relative to the venv directory by clicking on `Find...`
 
 
 Ipython bug:

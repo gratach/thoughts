@@ -1,6 +1,6 @@
 # Ipython notebook with venv
 
-Selecting a venv environment from a specific path in vscode jupyter notebook seams to be not possible if it does not get suggested.
+Selecting a [venv](../technologies/venv.md) environment from a specific path in vscode jupyter notebook seams to be not possible if it does not get suggested.
 
 # Solution:
 
