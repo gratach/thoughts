@@ -30,6 +30,7 @@ Here `<public key path>`is the path of the generated public key on the client
 `<username>`is the name of the linux user that wants to log in on the server (e.g. root)
 `<ip address>`is the ipv4 or ipv6 address of the server (on hetzner servers the ipv6 address can be obtained by replacing the /64 of the network mask by an 1)
 
+If the fingerprint of the server is not yet registered it has to be confirmed. Check the key fingerprint on the server with `ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub` and compare it to the one from ssh-copy-id. (`_`can be typed by pressing `?` on [german keyboard with english keyboard setting](debian-change-keyboard-setting-to-german.md)).
 This command saves the public key in the file `~/.ssh/authorized_keys` in the home directory of the respective user on the server
 
 ### Configure a ssh shortcut on the client

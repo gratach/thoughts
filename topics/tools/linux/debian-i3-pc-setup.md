@@ -136,8 +136,8 @@ exec --no-startup-id udiskie &
 exec --no-startup-id xset b off 
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec "/home/gratach/.config/i3/hell"
-bindsym XF86MonBrightnessDown exec "/home/gratach/.config/i3/dunkel"
+bindsym XF86MonBrightnessUp exec brightnessctl set +2%
+bindsym XF86MonBrightnessDown exec brightnessctl set 2%-
 
 # Screenshots
 bindsym Print exec --no-startup-id "gnome-screenshot"
@@ -150,7 +150,13 @@ bindsym $mod+Shift+comma move workspace to output left
 # Add and remove second monitor
 bindsym $mod+period exec "xrandr --output HDMI-2 --auto --right-of eDP-1"
 bindsym $mod+comma exec "xrandr --auto"
+
+# Dark mode toggle
+bindsym $mod+n  exec "/home/gratach/.config/i3/toggle-color"
 ```
 ```
 EOF
 ```
+
+Copy the [[configure-i3-darkmode]] script to `/home/gratach/.config/i3/toggle-color and make it executable.
+

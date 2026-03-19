@@ -1,5 +1,8 @@
 # Data with linked list version extension row file
 
+A better file format that serves a similar purpose is the [dwitlit-file-format](dwitlit-file-format.md).
+## Specification
+
 The `.dwllver`file format is an extended version of the [dwllr file format](data-with-link-list-rows-file.md) that allows to store [dwllve network data](data-with-link-list-version-extension-network.md).
 
 The basic structure of the dwllver file format is the same as the structure of the dwllr file format. It consists of a number of node entries that are separated by triple newline characters which in turn consist of the node id, the link list, the number of byte content bytes and the byte content each separated by double newlines.

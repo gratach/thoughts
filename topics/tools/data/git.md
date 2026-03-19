@@ -55,6 +55,11 @@ remote
 git push -d remote_name branch_name
 ```
 
+When the branch was deleted in the remote by a third party you can remove the corresponding local remote branch by running:
+
+```bash
+git fetch -p
+```
 #### Undo git add
 
 ```bash
@@ -65,6 +70,14 @@ git reset
 
 ```bash
 git reset --hard HEAD
+```
+
+```bash
+# Print all untracked files that can be deleted
+git clean -n -d 
+
+# Delete all untracked files and directories
+git clean -fd
 ```
 
 #### Get url of remote
