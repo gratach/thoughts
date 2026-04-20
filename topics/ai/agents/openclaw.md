@@ -3,8 +3,8 @@
 ## Installation on server
 
 Create a new debian server
-[[configure-ssh-key-for-server]]
-[[create-linux-user]] `<name_of_bot>` with sudo privileges.
+[configure-ssh-key-for-server](../../code/server/configure-ssh-key-for-server.md)
+[create-linux-user](../../linux/basics/create-linux-user.md) `<name_of_bot>` with sudo privileges.
 
 Installation steps ([source](https://www.interserver.net/tips/kb/deploy-openclaw-self-hosted-ai-agent-ubuntu-guide/))
 

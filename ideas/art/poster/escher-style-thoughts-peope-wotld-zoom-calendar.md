@@ -1,0 +1,3 @@
+# Escher style thoughts people world zoom calendar
+
+The poster should show a zoom in the style of esher ([paper](https://pub.math.leidenuniv.nl/~smitbde/papers/2003-de_smit-lenstra-escher.pdf), [youtube video](https://www.youtube.com/watch?v=ldxFjLJ3rVY)) that starts with a persons head in which an image of the universe is visible that contains planet earth that has images of all the people living on it scattered about the surface that includes the image of the person thinking of the universe. This poster should be customizable by selecting the image of the person thinking (and the persons surrounding him) and also the geographical location on the worlds map.

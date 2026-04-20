@@ -91,8 +91,11 @@ alias 3i="ipython3"
 alias 3p="python3"
 
 # g-g stands for "git graph"
+# g-g-m stands for "git graph minimalistic"
 # It opens a graph view of the git history
-alias g-g="git log --all --graph --oneline --decorate"
+alias g-g-m="git log --all --graph --oneline --decorate"
+alias g-g="git log --all --graph --oneline --decorate --format='%C(yellow)%h %C(cyan)%ad %C(green)%an%C(auto) %d %C(reset)%s' --date=short"
+
 
 # g-c stands for "git commit"
 # It adds all changes and commits them 
@@ -121,6 +124,14 @@ fi
 ```
 EOF
 ```
+
+At the line `# Add more custom configuration here` you can add:
+```
+# Convert links
+alias c-l="python3 <path-to-thoughts-knowledge-base>/.commands/make-links_relative.py"
+```
+With the `<path-to-thoughts-knowledge-base>` variable pointing to the [thoughts knowledge base](https://github.com/gratach/thoughts).
+This script is needed for the [zettlr](../writing/zettlr.md) link conversion.
 
 ## Configure the .config/i3/config file
 
@@ -158,5 +169,5 @@ bindsym $mod+n  exec "/home/gratach/.config/i3/toggle-color"
 EOF
 ```
 
-Copy the [[configure-i3-darkmode]] script to `/home/gratach/.config/i3/toggle-color and make it executable.
+Copy the [configure-i3-darkmode](../../linux/debian/configure-i3-darkmode.md) script to `/home/gratach/.config/i3/toggle-color and make it executable.
 

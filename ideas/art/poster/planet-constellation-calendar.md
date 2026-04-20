@@ -1,0 +1,3 @@
+# Planet constellation calendar
+
+The calendar should show the planet constellation at a given time. Our sun in the center and the Planets surrounding it. The distance between the planet orbits should shown logarithmic (or in some other way so that they are all nearly equally spaced). Alongside the tracks of the planets should be numbers that show the time that passes since the initial constellation or the dates (or both) when the planet arrives at this position. The inner planet tracks should show a small time span passing while the outer planets should show a longer time span. In the background of the planets should be the star constellations visible. All should be shown on a poster that is customizable and can be created on a website by inserting the start time.
