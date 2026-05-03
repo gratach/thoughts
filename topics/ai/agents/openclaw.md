@@ -22,7 +22,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 \. "$HOME/.nvm/nvm.sh"
 nvm install 24
 ```
-Install openclaw
+Install openclaw ([source](https://docs.openclaw.ai/start/getting-started))
+```
+curl -fsSL https://openclaw.ai/install.sh | bash
+```
+Alternatively this also could work
 ```
 npm install -g openclaw@latest
 ```
@@ -46,7 +50,7 @@ ssh -N -L 18789:127.0.0.1:18789 <name_of_bot>@<your_server_ip>
 Start gateway
 
 ```
-opneclaw gateway start
+openclaw gateway start
 ```
 
 Open in browser
@@ -94,6 +98,9 @@ curl --request POST \
 ```
 If necessary replace `https://matrix.org` by your own matrix homserver url 
 
+## Security
+
+[Security info](https://docs.openclaw.ai/gateway/security)
 
 ## Stop gateway
 

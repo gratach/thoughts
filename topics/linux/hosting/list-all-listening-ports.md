@@ -4,6 +4,11 @@ In order to show all listening ports on a linux device run
 
 `sudo netstat -tunlp` 
 
+Netstat can be installed on debian by running
+```
+sudo apt install net-tools
+```
+
 [Source](https://linuxize.com/post/check-listening-ports-linux/)
 
 ## Beispiel output:

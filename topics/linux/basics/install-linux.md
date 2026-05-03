@@ -33,3 +33,5 @@ Boot PC with stick and go to uefi
 	Select stick as boot device
 	Proceed with installation
 	After installation select default as boot device again
+### 4)
+To reuse the stick as file storage [Create file system](../../software/infastructure/create-file-system.md)

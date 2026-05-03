@@ -190,4 +190,5 @@ To achieve this goal, a Javascript demo was developed to test navigation through
 
 ### See also
 
+A similar project implementing this approach is [debategraph](https://debategraph.org)
 [open-forum-for-collective-thinking](../../data/knowledge/open-forum-for-collective-thinking.md)

@@ -11,6 +11,13 @@ It is available via the [Azure cloud service](https://portal.azure.com)
 
 [Brave web search API](https://brave.com/search/api/) also offers one tariff only for search experiences and one tariff only for use with LLMs but additionally offers a tariff that allows storing the search results. This tariff is nearly 9 times as expensive as the search experience tariff and costs $26 CPM (costs per mille).
 
+## Exa AI
+[Exa](https://exa.ai)
+
+## Fire crawl
+[Fire crawl](https://www.firecrawl.dev)
+
+
 
 
 
