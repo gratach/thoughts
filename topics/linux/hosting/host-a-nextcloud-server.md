@@ -2,7 +2,7 @@
 
 A nextcloud server can be hosted as described in the [official documentation](https://docs.nextcloud.com/server/latest/admin_manual/index.html).
 
-There is a App in Hetzner that includes a default installation. The hetzner default image can be configured via console on the first console connection. The console installation asks you to select your url. Choose `<your choosen nextcloud domain>` a url that points to your server 
+There is a App in [Hetzner](../../software/infastructure/hetzner.md) that includes a default installation. The Hetzner default image can be configured via console on the first console connection. The console installation asks you to select your url. Choose `<your choosen nextcloud domain>` a url that points to your server 
 
 ## Controlling Nextcloud with the occ command
 

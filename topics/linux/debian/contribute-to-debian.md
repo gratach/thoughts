@@ -1,4 +1,4 @@
-# Contribute to debian
+# Contribute to Debian
 
 Contribute to [Debian](debian.md):
 
@@ -9,8 +9,20 @@ Bug report:
 Package informations
 	[tracker](https://tracker.debian.org/)
 
+## Wnpp
 
-Packaging 
+An overview over all packages that are orphaned, intended to package or intended to adopt can be found [here](https://bugs.debian.org/cgi-bin/pkgreport.cgi?pkg=wnpp;dist=unstable) on wnpp some introduction and the explanation of the abbreviations can be found [here](https://www.debian.org/devel/wnpp/):
+
+- **O** Orphaned package
+- **RFA** Request for adoption
+- **RFH** Request for help
+- **ITP** Intend to package
+- **RFP** Request for package
+- **ITA** Intend to adapt an orpaned package
+
+
+
+## Packaging 
 ```
 apt install sbuild devscripts piuparts lintian git-buildpackage quilt
 apt get source hello
@@ -27,3 +39,11 @@ gbp import-orig ../hello-2.10.tar.gz --debian-branch=debian/latest --upstream-br
 
 ```
 
+## Visualize package dependencies
+
+[source](https://wiki.julian-lemmerich.de/doku.php?id=knowledge_base:linux:debtree)
+
+```
+apt install debtree graphviz
+debtree <name-of-package> | dot -Tpng > <name-of-output-file>.png
+```

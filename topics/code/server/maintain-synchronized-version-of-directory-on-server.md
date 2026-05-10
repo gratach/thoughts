@@ -17,7 +17,7 @@ Therefore rsync has to be installed on server and client (`apt install rsync` on
 The following command can be used for the synchronization:
 
 ```
-rsync -a --delete <source directory>/ <server>:<destination directory>
+rsync -a -v --delete <source directory>/ <server>:<destination directory>
 ```
 
 Use with care. The old content of the destination directory is deleted.

@@ -1,7 +1,7 @@
 
 # Recreationg the einfallsor
 
-To recreate the einfallstor go to Hetzner and rebuild a server with the `dritt-server-mit-einfallstor` snapshot.
+To recreate the einfallstor go to [Hetzner](../../software/infastructure/hetzner.md) and rebuild a server with the `dritt-server-mit-einfallstor` snapshot.
 
 Login as root using the dritt ssh key in elefantpc.
 
