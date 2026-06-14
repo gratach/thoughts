@@ -11,7 +11,7 @@ Choose the latest and download the `pine64-pinephoneA64-*.tar.xz` tar archive.
 
 Extract the tar archive and follow [these instructions](https://tow-boot.org/devices/pine64-pinephoneA64.html):
 
-Flash the `mmcboot.installer.img` to a suitable SD card:
+[Flash](../basics/flash-image-on-stick.md) the `mmcboot.installer.img` to a suitable SD card:
 ```
 dd if=mmcboot.installer.img of=/dev/XXX bs=1M oflag=direct,sync status=progress
 ```

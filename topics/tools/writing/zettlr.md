@@ -17,3 +17,6 @@ This script needs to be located in a folder that is contained in the base folder
 This file name can be obtained by right clicking on the according markdown tab in zettlr and chosing  `Copy path`.
 
 When using the [Debian i3 PC setup](../linux/debian-i3-pc-setup.md) the script can be executed by typing `c-l <path-of-link-file>` in the console.
+
+## See also
+[Install Zettlr in a Qubes template](../../linux/qubes/install-zettlr-in-a-qubes-template.md)

@@ -24,3 +24,12 @@ You can add a existing user to the sudo group with:
 ```
 usermod -aG sudo <name_of_the_user>
 ```
+
+## No sudo password required
+
+To allow executing the sudo command without entering the password execute
+```
+visudo
+```
+This opens an editor. Change the line `%sudo    ALL=(ALL:ALL) ALL` to `%sudo   ALL=(ALL:ALL) NOPASSWD: ALL`
+Now all users in the sudo group can execute sudo commands without entering password.

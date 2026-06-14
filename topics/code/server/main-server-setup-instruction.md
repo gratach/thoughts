@@ -4,7 +4,7 @@ This is a detailed instruction on how I did the setup of my server.
 If you find any security flaws in this configuration please do not exploit them but notify me so I can fix them (patrick-richter(at)posteo.de).
 ### Create a server
 
-Create an account on [Hetzner](https://hetzner.com)
+Create an account on [Hetzner](../../software/infastructure/hetzner.md)
 Navigate to Hetzner Cloud
 Create a new Server or [Rebuild an existing Server](../bugs/rebuilding-the-hetzner-server.md) with the Debian 12 image
 
@@ -260,6 +260,8 @@ mkdir linchat
 mv chat_server.py linchat
 cd linchat
 ```
+##### Start service using nohup
+
 Start the websocket server as a [background process](working-with-background-processes-in-bash.md)
 ```
 nohup python3 chat_server.py > /dev/null 2>&1 &
@@ -268,6 +270,32 @@ Check if the process is running
 ```
 ps -f -u webuser
 ```
+##### Alternatively (and better) run script using systemd
+
+Add a file `/etc/systemd/system/linchat.service` with the following content:
+```
+[Unit]
+Description=Linchat websocket backend
+After=network.target
+
+[Service]
+Type=simple
+User=<MYSERVERWEBUSERNAME>
+WorkingDirectory=/home/<MYSERVERWEBUSERNAME>/linchat
+ExecStart=/usr/bin/python3 /home/<MYSERVERWEBUSERNAME>/linchat/chat_server.py
+
+[Install]
+WantedBy=multi-user.target
+```
+==Replace `<MYSERVERWEBUSERNAME>` with the actual name==
+
+Run as root:
+```
+systemctl daemon-reload
+systemctl enable linchat.service
+systemctl start linchat.service
+```
+
 ##### Prepare the linkinator-test website
 
 Clone the website generator
@@ -633,6 +661,7 @@ cat >> /etc/crontab << EOF
 11 22 * * 3 root certbot renew -n --nginx >> /dev/null 2>&1
 EOF
 ```
+This means: at minute 11 hour 22 at the 3rd day of the week try to renew the certificate. ==You should change the time==.
 
 ### Configure the mail server
 
@@ -676,6 +705,34 @@ chmod 700 /home/p/.ssh
 cp ~/.ssh/authorized_keys /home/p/.ssh/authorized_keys
 chown p:p /home/p/.ssh/authorized_keys
 ```
+
+### Unattended upgrade
+
+(See [Automatic upgrades](automatic-upgrades.md) or [this guide](https://linuxiac.com/how-to-set-up-automatic-updates-on-debian/))
+```
+apt install python3-gi
+apt install unattended-upgrades
+apt install mailutils
+```
+Mailutils is needed for mailx but the previously installed postfix is needed for it to function
+
+Edit `/etc/apt/apt.conf.d/50unattended-upgrades` and change the following:
+- Uncomment the line `Unattended-Upgrade::Mail "<the-email-address-where-information-about-the-upgrade-should-be-send-to>";` and insert your email address.
+- Uncomment all `Unattended-Upgrade::Origins-Pattern { "origin=..."` lines
+- Uncomment line `Unattended-Upgrade::Remove-Unused-Dependencies "true";` and set the value to `true`
+- Uncomment and set to true: `Unattended-Upgrade::Automatic-Reboot "true";`
+
+Enable unattended upgrade using:
+```
+dpkg-reconfigure --priority=low unattended-upgrades
+```
+Choose Yes
+
+Check the service status by typing:
+```
+systemctl status unattended-upgrades.service
+```
+Logs can be found in `/var/log/unattended-upgrades/`
 
 ## Update and migration
 

@@ -2,7 +2,7 @@
 
 This knowledge base is an attempt to collect various ideas on different subject areas and make them accessible to the public. 
 
-It is designed as a file tree made up of Markdown files that is contained in a git repository. This repository is hosted on [Github](https://github.com/gratach/thoughts/) and can be also viewed and browsed on that page. Another way to make the database navigable is to convert it into a static website using Sphinx.
+It is designed as a file tree made up of Markdown files that is contained in a git repository. A version of this repository that is hosted on [Github](../../software/infastructure/github.md) can be found [here](https://github.com/gratach/thoughts/). It can also be viewed and browsed on that page. Another way to make the database navigable is to convert it into a static website using Sphinx.
 
 ```
 sphinx-build <input-filename> <output-filename>

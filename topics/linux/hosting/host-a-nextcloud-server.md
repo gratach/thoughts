@@ -2,7 +2,7 @@
 
 A nextcloud server can be hosted as described in the [official documentation](https://docs.nextcloud.com/server/latest/admin_manual/index.html).
 
-There is a App in Hetzner that includes a default installation. The hetzner default image can be configured via console on the first console connection. The console installation asks you to select your url. Choose `<your choosen nextcloud domain>` a url that points to your server 
+There is a App in [Hetzner](../../software/infastructure/hetzner.md) that includes a default installation. The Hetzner default image can be configured via console on the first console connection. The console installation asks you to select your url. Choose `<your choosen nextcloud domain>` a url that points to your server 
 
 ## Controlling Nextcloud with the occ command
 
@@ -83,7 +83,7 @@ You have to chose a url `<your choosen collabora domain>` that points to the ser
 
 [Proxy manual](https://sdk.collaboraonline.com/docs/installation/Proxy_settings.html)
 
-In  `/etc/coolwsd/coolwsd.xml` edit the `<server_name>`tag to match the server name (eg. `collabora.example.com`)
+In  `/etc/coolwsd/coolwsd.xml` edit the `<server_name>` tag to match the server name (eg. `collabora.example.com`)
 
 Install the modules for the apache web server
 ```
@@ -249,7 +249,6 @@ denied-peer-ip=2001:db8::-2001:db8:ffff:ffff:ffff:ffff:ffff:ffff
 denied-peer-ip=2002::-2002:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 ```
 
-
 #### Logging
 
 System logs of coturn can be seen via
@@ -310,6 +309,7 @@ Add:
 ```
 17 3 * * 2 /usr/bin/certbot renew >> /var/log/le-renew.log
 ```
+See also [Recurring tasks](../basics/recurring-tasks.md)
 
 ### Configuration in Nextcloud
 
@@ -329,9 +329,241 @@ Add to all apache virtual host files that listen on 443 directly after the Serve
 ```
 You can also add `; preload` directly after includeSubDomains in order to add the server to a preload list that is hard coded into browsers. 
 ==WARNING:== this has long term consequences for all subdomains [as described here](https://hstspreload.org/).
+
 ## Nextcloud backup
 
 [docs](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html)
+
+Create backup folder:
+```
+mkdir -p /var/backups/nextcloud
+chown www-data:www-data /var/backups/nextcloud
+```
+Switch user to www-data
+```
+sudo -u www-data bash
+```
+Create `/var/www/.backup-mysql-login` with the following content:
+```
+[client]
+user=<your-db-user>
+password=<your-db-user-password>
+host=localhost
+```
+Use the user and password that is stored in `/var/www/<your-nextcloud-folder-location>/config/config.php `
+```
+chmod 600 /var/www/.backup-mysql-login
+```
+Turn maintenance mode on:
+```
+cd /var/www/<your-nextcloud-folder-location>
+php occ maintenance:mode --on
+```
+
+Dump the database
+```
+mysqldump --defaults-extra-file=/var/www/.backup-mysql-login --no-tablespaces --single-transaction nextcloud > /var/backups/nextcloud/<your-backup-file.bak>
+```
+Copy the files
+```
+rsync -Aavx /var/www/<your-nextcloud-folder-location>/ /var/backups/nextcloud/<backup-files>
+```
+Turn maintenance mode off
+```
+php occ maintenance:mode --off
+```
+### Backup script
+
+A script to do it all at once. Execute it as www-data
+```
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Configuration
+NEXTCLOUD_DIR="/var/www/html"
+MYSQL_CREDENTIALS="/var/www/.backup-mysql-login"
+DATABASE_NAME="nextcloud"
+BACKUP_BASE="/var/backups/nextcloud"
+
+STAY_IN_MAINTENANCE=false
+
+# Parse command line arguments
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --stay-in-maintenance)
+            STAY_IN_MAINTENANCE=true
+            shift
+            ;;
+        *)
+            echo "Unknown argument: $1"
+            exit 1
+            ;;
+    esac
+done
+
+# Generate timestamp
+TIMESTAMP=$(date +"%Y-%m-%d-%H-%M")
+BACKUP_DIR="${BACKUP_BASE}/${TIMESTAMP}"
+
+# Cleanup function to disable maintenance mode on exit
+cleanup() {
+    if [[ "${STAY_IN_MAINTENANCE}" == "false" ]]; then
+        echo "Disabling maintenance mode..."
+
+        (
+            cd "${NEXTCLOUD_DIR}" || exit 1
+            php occ maintenance:mode --off
+        ) || true
+    else
+        echo "Leaving Nextcloud in maintenance mode."
+    fi
+
+    # Create first-backup-date.txt if it does not exist
+    FIRST_BACKUP_FILE="${BACKUP_BASE}/first-backup-date.txt"
+
+    if [[ ! -f "${FIRST_BACKUP_FILE}" ]]; then
+        echo "${TIMESTAMP}" > "${FIRST_BACKUP_FILE}"
+    fi
+
+    # Run backup cleanup script
+    python3 "${BACKUP_BASE}/clean-up-old-backups.py" || true
+}
+
+trap cleanup EXIT
+
+echo "Creating backup directory..."
+mkdir -p "${BACKUP_DIR}"
+
+echo "Enabling maintenance mode..."
+cd "${NEXTCLOUD_DIR}"
+php occ maintenance:mode --on
+
+echo "Creating database dump..."
+mysqldump \
+    --defaults-extra-file="${MYSQL_CREDENTIALS}" \
+    --no-tablespaces \
+    --single-transaction \
+    "${DATABASE_NAME}" \
+    > "${BACKUP_DIR}/database.sql"
+
+echo "Backing up Nextcloud files..."
+rsync -Aavx \
+    "${NEXTCLOUD_DIR}/" \
+    "${BACKUP_DIR}/webroot/"
+
+echo "Backup completed:"
+echo "  ${BACKUP_DIR}"
+
+echo "Creating archive..."
+tar -czf "${BACKUP_BASE}/${TIMESTAMP}.tar.gz" -C "${BACKUP_BASE}" "${TIMESTAMP}"
+
+echo "Removing temporary backup directory..."
+rm -rf "${BACKUP_DIR}"
+
+echo "Backup archive created:"
+echo "  ${BACKUP_BASE}/${TIMESTAMP}.tar.gz"
+```
+Add the [remove old backup script](../../data/storing/remove-old-backups-script.md) to `/var/backups/nextcloud/clean-up-old-backups.py`
+Change the `BACKUP_DIR` variable in the script to `/var/backups/nextcloud`.
+Set the `max_backups` variable in the script to an appropriate value (e.g. 5).
+
+## Nextcloud update
+
+[Update instructions](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html)
+
+You can update using this script. (Save it as `/var/www/update-script.sh`)
+
+==Replace ADMIN_MAIL_ADDRESS with your mail address==
+
+Replace OCC and PHP_BIN if necessary.
+```
+#!/bin/bash
+
+# ============================================================================
+# Configuration
+# ============================================================================
+
+ADMIN_MAIL_ADDRESS="admin@example.com"
+
+# Path to Nextcloud OCC
+OCC="/var/www/html/occ"
+
+# PHP binary
+PHP_BIN="/usr/bin/php"
+
+# ============================================================================
+# Script
+# ============================================================================
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+echo "Starting backup..."
+"${SCRIPT_DIR}/backup-script.sh"
+
+echo "Backup completed."
+
+echo "Starting Nextcloud upgrade..."
+"${PHP_BIN}" "${OCC}" upgrade --no-interaction
+
+echo "Upgrade completed."
+
+echo "Checking maintenance mode..."
+MAINTENANCE_STATUS="$("${PHP_BIN}" "${OCC}" maintenance:mode)"
+
+echo "${MAINTENANCE_STATUS}"
+
+if echo "${MAINTENANCE_STATUS}" | grep -q "enabled"; then
+    echo "Maintenance mode is still enabled after upgrade."
+
+    mail -s "WARNING: Nextcloud maintenance mode still enabled" \
+        "${ADMIN_MAIL_ADDRESS}" <<EOF
+The Nextcloud upgrade has completed, but maintenance mode is still enabled.
+
+Host: $(hostname)
+Date: $(date)
+
+Output of occ maintenance:mode:
+
+${MAINTENANCE_STATUS}
+
+Please check the system manually.
+EOF
+
+    exit 1
+fi
+
+echo "Maintenance mode is disabled."
+echo "Upgrade finished successfully."
+
+exit 0
+```
+### Automatic updates
+
+To execute this script on a regular base use the following steps:
+Create directory `/var/log/nextcloud` and allow www-data write access:
+```
+mkdir /var/log/nextcloud
+chown www-data:www-data /var/log/nextcloud
+```
+Set UTC as time zone:
+```
+timedatectl set-timezone UTC
+```
+Add a new crontab by inserting the line
+`11 10 * * * /bin/bash /var/www/backup-script.sh >> /var/log/nextcloud/nextcloud-update.log 2>&1`
+in the editor spawned by the command
+`crontab -u www-data -e`
+
+Adjust the backup time by modifying the line based on the chrontab patterns explained [here](../basics/recurring-tasks.md). 
+
+### System updates
+
+Additionally to the nextcloud updates you should also enable [system updates](../../code/server/automatic-upgrades.md).
+
+==Make sure there is enough time between the system update and the nextcloud update==.
 
 ## Lets Encrypt
 
@@ -341,4 +573,3 @@ Edit the `crontab` using the command:
 ## Security
 
 Check the security & setup warnings in your nextcloud admin account by navigating to administration settings (top right corner menu) > overview
-

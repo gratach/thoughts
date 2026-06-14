@@ -28,10 +28,17 @@ ssh-copy-id -i <public key path> <username>@<ip address>
 
 Here `<public key path>`is the path of the generated public key on the client
 `<username>`is the name of the linux user that wants to log in on the server (e.g. root)
-`<ip address>`is the ipv4 or ipv6 address of the server (on hetzner servers the ipv6 address can be obtained by replacing the /64 of the network mask by an 1)
+`<ip address>`is the ipv4 or ipv6 address of the server (on [Hetzner](../../software/infastructure/hetzner.md) servers the ipv6 address can be obtained by replacing the /64 of the network mask by an 1)
 
 If the fingerprint of the server is not yet registered it has to be confirmed. Check the key fingerprint on the server with `ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub` and compare it to the one from ssh-copy-id. (`_`can be typed by pressing `?` on [german keyboard with english keyboard setting](debian-change-keyboard-setting-to-german.md)).
 This command saves the public key in the file `~/.ssh/authorized_keys` in the home directory of the respective user on the server
+
+## SSH access
+
+```
+ssh -i ~/.ssh/<path-to-key> -o IdentitiesOnly=yes <user>@123.456.123.456
+```
+Replace `123.456.123.456` with your IP address
 
 ### Configure a ssh shortcut on the client
 
@@ -48,3 +55,19 @@ Host <shortcut>
 The server can now be accessed via
 
 `ssh <shortcut>`
+
+## IPv6
+
+If your server is available via an IPv6 address run:
+```
+ssh -6 -i ~/.ssh/<path-to-key> -o IdentitiesOnly=yes <user>@1234:1234:1234:1234::1
+```
+Alternatively use the following config file:
+```
+Host claw
+	HostName @1234:1234:1234:1234::1
+	User <user>
+	AddressFamily inet6
+	IdentityFile /home/user/<path-to-key>
+	IdentitiesOnly yes
+```

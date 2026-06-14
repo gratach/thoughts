@@ -12,7 +12,7 @@ Download image
 		[Download](https://archlinux.org/download/)
 	
 ### 2) 
-Write image to usb stick
+[Write image to usb stick](flash-image-on-stick.md)
 	Find out the name of the usb device
 		Compare with stick in and out:
 			Option 1

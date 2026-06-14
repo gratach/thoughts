@@ -1,6 +1,6 @@
 # Listen on a different ip
 
-When using hetzner servers each server gets assigned to a ipv6 address space like `1234:5678:90ab:cdef::/64`. The 64 means that the first 64 bits are part of the network prefix and the rest are the host addresses (which can be assigned).
+When using [Hetzner](../infastructure/hetzner.md) servers each server gets assigned to a ipv6 address space like `1234:5678:90ab:cdef::/64`. The 64 means that the first 64 bits are part of the network prefix and the rest are the host addresses (which can be assigned).
 
 When a server should listen on more than one of these addresses it can be configured in [netplan](https://wiki.ubuntuusers.de/Netplan/) by adding a new entry to `/etc/netplan/<name-of-the-file>` in `network.ethernets.eth0.addresses`.
 

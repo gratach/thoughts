@@ -1,6 +1,6 @@
 # Rebuilding the Hetzner server
 
-When I rebuild an existing Hetzner server with an new image I don't get any password information or an working ssh key and can not login as root user. 
+When I rebuild an existing [Hetzner](../../software/infastructure/hetzner.md) server with an new image I don't get any password information or an working ssh key and can not login as root user. 
 
 #### Solution
 
