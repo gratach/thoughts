@@ -46,7 +46,8 @@ a ssh shortcut to a server `<username>@<ip address>` can be configured in file `
 
 To implement this add the following lines to the file:
 ```
-Host <shortcut>
+Host <shortcut>c-l c-
+
         HostName <ip address>
         User <username>
         IdentityFile <path to private key>

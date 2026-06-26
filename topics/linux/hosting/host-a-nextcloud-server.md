@@ -563,9 +563,11 @@ Adjust the backup time by modifying the line based on the chrontab patterns expl
 
 Additionally to the nextcloud updates you should also enable [system updates](../../code/server/automatic-upgrades.md).
 
-==Make sure there is enough time between the system update and the nextcloud update==.
+==Make sure there is enough time between the system update and the nextcloud update.==
 
 ## Lets Encrypt
+
+See [Certbot](../../software/hosting/certbot.md)
 
 Make sure that the automatic certificate refreshing is enabled.
 Edit the `crontab` using the command:

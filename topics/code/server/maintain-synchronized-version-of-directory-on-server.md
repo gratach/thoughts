@@ -1,6 +1,6 @@
 # Maintain synchronized version of directory on server
 
-### Using scp
+## Using scp
 
 Files can be copied recursive from client to server via
 
@@ -8,7 +8,7 @@ Files can be copied recursive from client to server via
 
 This does not work if the destination directory already exists
 
-### Using rsync
+## Using rsync
 
 With rsync an directory on the server can be synchronized to the current version of a local directory
 
@@ -23,3 +23,10 @@ rsync -a -v --delete <source directory>/ <server>:<destination directory>
 Use with care. The old content of the destination directory is deleted.
 
 Note the `/` symbol after the `<source directory>`. It is important to replace the destination directory with the source directory. If missing the source directory will be placed in the destination directory
+
+### Show total progress in rsync
+
+The total progress in rsync can be shown with
+```
+rsync -a --infoprogress2 -v --delete <source directory>/ <server>:<destination directory>
+```

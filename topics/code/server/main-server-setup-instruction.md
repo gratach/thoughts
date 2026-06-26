@@ -91,7 +91,6 @@ Install [rsync](maintain-synchronized-version-of-directory-on-server.md) on the 
 apt update
 apt install rsync
 ```
-
 ```
 exit
 ```
@@ -110,31 +109,32 @@ exit
 ##### Prepare the trickrichter website
 ```
 git clone --depth 1 https://github.com/gratach/pa-trickrichter-website
-rsync -a --delete pa-trickrichter-website/www/ $MYSERVERNAME:/var/www/pa-trickrichter-website
+rsync -a --delete --progress pa-trickrichter-website/www/ $MYSERVERNAME:/var/www/pa-trickrichter-website
 ```
 
 ##### Prepare the debablo website
 
 ```
 git clone --depth 1 https://github.com/gratach/debablo-website
-rsync -a --delete debablo-website/www/ $MYSERVERNAME:/var/www/dabablo-website
+rsync -a --delete --progress debablo-website/www/ $MYSERVERNAME:/var/www/debablo-website
 ```
 ##### Prepare the spiralife website
 
 ```
 git clone https://github.com/gratach/spiralife
 cd spiralife
-git switch javascript
-cd javascript
+# git switch javascript
+# cd javascript
 npm run build
 rsync -a --delete dist/ $MYSERVERNAME:/var/www/spiralife-website
-cd ../..
+# cd ../..
+cd ..
 ```
 
 ##### Prepare the quantsimulant website
 ```
 # Install emskripten
-git clone https://github.com/emscripten-core/emsdk.git
+git clone --depth 1 https://github.com/emscripten-core/emsdk.git
 cd emsdk
 ./emsdk install latest
 ./emsdk activate latest
@@ -144,7 +144,7 @@ cd ..
 git clone --depth 1 https://github.com/gratach/quantsimulant.git
 git clone --depth 1 https://github.com/gratach/quantsimulant-website.git
 python3 quantsimulant-website/create_website.py
-rsync -a --delete quantsimulant-website/dist/ $MYSERVERNAME:/var/www/quantsimulant
+rsync -a --progress --delete quantsimulant-website/dist/ $MYSERVERNAME:/var/www/quantsimulant
 ```
 ##### Prepare klangqualm website
 
@@ -166,9 +166,11 @@ rsync -a -v --stats --progress --delete klangqualm-website/dist/ $MYSERVERNAME:/
 ##### Prepare the thoughts website
 
 ```
+apt install python3-sphinx
+apt install python3-myst-parser
 git clone --depth 1 https://github.com/gratach/thoughts
 python3 thoughts/.commands/create_sphinx_documentation.py
-rsync -a --delete thoughts/.commands/output/ $MYSERVERNAME:/var/www/thoughts
+rsync -a --delete --progress thoughts/.commands/output/ $MYSERVERNAME:/var/www/thoughts
 ```
 
 ##### Prepare cokurs and scratch website
@@ -242,7 +244,7 @@ Upload content to server
 rsync -a --delete linchat/dist/ $MYSERVERNAME:/var/www/linchat
 scp linchat/chat_server.py $MYSERVERWEBUSERNAME:~/chat_server.py
 ```
-Ssh into the server as webuser
+Ssh into the server as root
 ```
 ssh $MYSERVERNAME
 ```
@@ -260,6 +262,24 @@ mkdir linchat
 mv chat_server.py linchat
 cd linchat
 ```
+##### Copy already existing data files
+
+If a `nutz.dat` and a `nachr.dat` already exists copy them to the linchat folder and make them writable by webuser
+
+##### Add notification script
+
+Create a file `notify-me` in the linchat directory with the following content:
+```
+#!/bin/bash
+echo -e "Subject:Linchat Activity \n\nThere is new activity on your linchat chat https://linchat.trickrichter.de" | /usr/sbin/sendmail -t "<your-mail-address>"
+```
+Replace `<your-mail-address>`
+
+Make the script executable
+```
+chmod +x notify-me
+```
+
 ##### Start service using nohup
 
 Start the websocket server as a [background process](working-with-background-processes-in-bash.md)
@@ -529,7 +549,7 @@ server{
 	listen 443 ssl;
 	listen [::]:443 ssl;
 	
-	server_name quantsimulant.de www.quantsimulant.de
+	server_name quantsimulant.de www.quantsimulant.de;
 	ssl_certificate /etc/letsencrypt/live/quantsimulant.de/fullchain.pem;
 	ssl_certificate_key /etc/letsencrypt/live/quantsimulant.de/privkey.pem;
 
@@ -540,6 +560,9 @@ server{
 		try_files $uri $uri/ =404;
 	}
 }
+
+limit_conn_zone $binary_remote_addr zone=addr:10m;
+limit_req_zone $binary_remote_addr zone=one:10m rate=2r/s;
 server{
 	listen 443 ssl;
 	listen [::]:443 ssl;
@@ -548,7 +571,11 @@ server{
 	ssl_certificate /etc/letsencrypt/live/trickrichter.de/fullchain.pem;
 	ssl_certificate_key /etc/letsencrypt/live/trickrichter.de/privkey.pem;
 
+
+
 	location /webs {
+		limit_conn addr 5;
+		limit_req zone=one burst=10;
 		proxy_pass http://localhost:9249;
 		proxy_http_version 1.1;
 		proxy_set_header Upgrade $http_upgrade;
@@ -641,6 +668,7 @@ Set the reverse DNS records
 
 ### Configure HTTPS
 
+See also: [Certbot](../../software/hosting/certbot.md)
 ```
 apt install certbot
 apt install python3-certbot-nginx
@@ -653,13 +681,14 @@ certbot certonly -n --nginx --force-renewal -d klangqualm.de -d www.klangqualm.d
 certbot certonly -n --nginx  --staple-ocsp --force-renewal -d server.trickrichter.de
 ```
 
-Set automatic certificate renewals with cron (use this syntax to avoid [bug](../bugs/etc-crontab-syntax-bug.md))
+Set automatic certificate renewals with [cron](../../linux/basics/recurring-tasks.md) (use this syntax to avoid [bug](../bugs/etc-crontab-syntax-bug.md))
 
+Edit crontab with `crontab -e`
+
+Add the following line:
 ```
-cat >> /etc/crontab << EOF
 # Lets encrypt certificate renewal
 11 22 * * 3 root certbot renew -n --nginx >> /dev/null 2>&1
-EOF
 ```
 This means: at minute 11 hour 22 at the 3rd day of the week try to renew the certificate. ==You should change the time==.
 
@@ -772,7 +801,7 @@ rsync -a --delete $MYSERVERNAME:/var/www/klangqualm-website/data/ <path-of-the-n
 The following commands can be used to scrape the cokurs and scratch user data from the server and put them back into a local cokurs project.
 ```
 git clone --depth 1 https://github.com/gratach/cokurs-website
-rsync -a --delete $MYSERVERNAME:/var/www/cukurs-website/ cokurs-website/dist
+rsync -a --delete $MYSERVERNAME:/var/www/cokurs-website/ cokurs-website/dist
 rsync -a --delete $MYSERVERNAME:/var/www/scratch-data/assets/ cokurs-website/scratch-assets
 rsync -a --delete $MYSERVERNAME:/var/www/scratch-data/projects/ cokurs-website/scratch-projects
 rsync -a --delete $MYSERVERWEBUSERNAME:~/cokurs-metadata/ cokurs-website/metadata
@@ -781,6 +810,9 @@ They can then be exported to a local user data directory `<path-of-the-new-user-
 ```
 python3 cokurs-website/export_data.py --export-folder <path-of-the-new-user-data>
 ```
+#### Scrape linchat data
+
+
 
 ## Check server setup
 

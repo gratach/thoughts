@@ -45,3 +45,7 @@ Fields can have one of these formats:
 ```
 Execute on minute 17 of hour 3 every Tuesday.
 
+## Bugs
+
+[etc crontab syntax bug](../../code/bugs/etc-crontab-syntax-bug.md)
+

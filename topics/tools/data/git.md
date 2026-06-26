@@ -65,6 +65,10 @@ git fetch -p
 ```bash
 git reset
 ```
+#### Undo local commit
+```
+git reset HEAD~1
+```
 
 #### Discard local changes
 
@@ -89,6 +93,11 @@ git remote get-url name_of_remote_probably_origin
 
 ```bash
 git remote set-url name_of_remote_probably_origin name_of_the_url
+```
+## Set user name and email
+```
+git config --global user.name "<your name>"
+git config --global user.email "<your mail>"
 ```
 
 #### Shortcuts
